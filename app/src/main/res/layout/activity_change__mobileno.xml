@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/app_color_white"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    tools:context="com.vpipl.mmtbusiness.Register_Activity">
+
+    <include
+        layout="@layout/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView android:fontFamily="@font/gisha_0"
+        android:id="@+id/txt_heading"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:layout_gravity="center"
+        android:background="#328D6E"
+
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="Change Mobile no"
+        android:textAllCaps="false"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@android:color/white"
+        tools:ignore="Deprecated,HardcodedText" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="15dp"
+                android:background="@android:color/white"
+                android:id="@+id/ll_update_mobileno_enter_data"
+                android:orientation="vertical">
+
+
+                <TextView android:fontFamily="@font/gisha_0"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:text="For first time, your transaction password is same as your login password / or provided at the joining. However, you can change them anytime. Make sure you create strong transaction password as this would be your second level of security. Transaction password will be used to access E-Pin Management."
+                    android:textColor="@android:color/black"
+                    android:textSize="12sp" />
+
+                <TextView android:fontFamily="@font/gisha_0"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginTop="5dp"
+                    android:visibility="gone"
+                    android:text="Transaction password should not be same as login password and length should be more than eight characters. Also change the password frequently at least once in a week."
+                    android:textColor="@color/color_green_text"
+                    android:textSize="12sp" />
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="5dp"
+                    android:gravity="bottom"
+                    android:visibility="gone"
+                    android:minHeight="52dp">
+
+                    <android.support.design.widget.TextInputEditText android:fontFamily="@font/gisha_0"
+                        android:id="@+id/txt_password_type"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_orange_bottom_line"
+
+                        android:hint="@string/password_type"
+                        android:inputType="none"
+                        android:editable="false"
+                        android:drawableRight="@drawable/ic_expand_more_white"
+                        android:focusableInTouchMode="false"
+                        android:maxLines="1"
+                        android:minHeight="40dp"
+                        android:singleLine="true"
+                        android:textSize="14sp"
+                        tools:ignore="Deprecated" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="5dp" app:passwordToggleEnabled="true"
+                    android:gravity="bottom"
+                    android:minHeight="52dp">
+
+                    <android.support.design.widget.TextInputEditText android:fontFamily="@font/gisha_0"
+                        android:id="@+id/edtxt_old_mobileno"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_orange_bottom_line"
+                        android:hint="Old Mobile No."
+                        android:inputType="number"
+                        android:maxLines="1"
+                        android:focusable="false"
+                        android:maxLength="10"
+                        android:minHeight="40dp"
+                        android:editable="false"
+                        android:enabled="false"
+                        android:singleLine="true"
+                        android:textSize="14sp"
+                        android:digits="@string/numberic"
+                        tools:ignore="Deprecated" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="5dp" app:passwordToggleEnabled="true"
+                    android:gravity="bottom"
+                    android:minHeight="52dp">
+
+                    <android.support.design.widget.TextInputEditText android:fontFamily="@font/gisha_0"
+                        android:id="@+id/edtxt_new_mobileno"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_orange_bottom_line"
+                        android:maxLength="10"
+                        android:hint="New Mobile No."
+                        android:inputType="number"
+                        android:digits="@string/numberic"
+                        android:maxLines="1"
+                        android:minHeight="40dp"
+                        android:singleLine="true"
+                        android:textSize="14sp"
+                        tools:ignore="Deprecated" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="5dp"
+                    android:visibility="gone"
+                    android:gravity="bottom" app:passwordToggleEnabled="true"
+                    android:minHeight="52dp">
+
+                    <android.support.design.widget.TextInputEditText android:fontFamily="@font/gisha_0"
+                        android:id="@+id/edtxt_confirm_password"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_orange_bottom_line"
+
+                        android:hint="@string/confirm_password"
+                        android:inputType="textPassword"
+                        android:maxLines="1"
+                        android:minHeight="40dp"
+                        android:singleLine="true"
+                        android:textSize="14sp"
+                        tools:ignore="Deprecated" />
+                </android.support.design.widget.TextInputLayout>
+
+                <Button android:fontFamily="@font/gisha_0"
+                    android:id="@+id/btn_send_otp"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/bg_blue_circle_rectangle"
+                    android:focusableInTouchMode="false"
+                    android:text="Send OTP"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/white"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:id="@+id/ll_update_mobileno_enter_otp" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Enter Valid OTP"
+                    android:gravity="center"
+                    android:textSize="18dp"
+                    android:textColor="@color/colorPrimary"/>
+
+                <EditText
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:id="@+id/ed_otp"
+                    android:textColor="@color/app_color_black"
+                    android:background="@drawable/bg_round_button_white"
+                    android:padding="5dp"
+                    android:layout_marginTop="10dp"
+                    android:textSize="20dp"
+                    android:maxLength="6"
+                    android:digits="0123456789"
+                    android:inputType="number"
+                    android:gravity="center"/>
+
+                <Button android:fontFamily="@font/gisha_0"
+                    android:id="@+id/btn_updateProfileafterotp"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_margin="30dp"
+                    android:background="@drawable/bg_blue_circle_rectangle"
+                    android:focusableInTouchMode="false"
+                    android:text="Submit"
+                    android:textAllCaps="false"
+                    android:visibility="gone"
+                    android:textColor="@android:color/white"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+        android:background="@color/colorPrimaryDark" />
+</LinearLayout>

@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/transparent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5sp"
+        android:background="@drawable/hot_product_bg_round_rectangle"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/smile_on_wallet"/>
+
+            <TextView android:fontFamily="@font/gisha_0"
+                android:id="@+id/txt_msg"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:padding="5dp"
+                android:text="Success !"
+                android:gravity="center"
+                android:layout_marginLeft="10dp"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="25sp" />
+
+
+                </LinearLayout>
+
+                <TextView android:fontFamily="@font/gisha_0"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="3dp"
+                    android:id="@+id/txt_req_msg"
+                    android:text="Your transfer has been initiated."
+                    android:gravity="center"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/app_color_black"
+                    android:textSize="14sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/colorPrimary"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView android:fontFamily="@font/gisha_0"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:padding="5dp"
+                            android:text="Amount"
+                            android:gravity="right"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="@color/app_color_black"
+                            android:textSize="14sp" />
+                        <TextView android:fontFamily="@font/gisha_0"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:padding="5dp"
+                            android:layout_weight="1"
+                            android:text=""
+                            android:id="@+id/txt_req_amt"
+                            android:gravity="left"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="@color/app_color_black"
+                            android:textSize="14sp" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView android:fontFamily="@font/gisha_0"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:padding="5dp"
+                            android:text="From"
+                            android:gravity="right"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="@color/app_color_black"
+                            android:textSize="14sp" />
+                        <TextView android:fontFamily="@font/gisha_0"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:padding="5dp"
+                            android:layout_weight="1"
+                            android:text="@string/app_name"
+                            android:gravity="left"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="@color/app_color_black"
+                            android:textSize="14sp" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView android:fontFamily="@font/gisha_0"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:padding="5dp"
+                            android:text="To"
+                            android:gravity="right"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="@color/app_color_black"
+                            android:textSize="14sp" />
+                        <TextView android:fontFamily="@font/gisha_0"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:padding="5dp"
+                            android:layout_weight="1"
+                            android:text=""
+                            android:gravity="left"
+                            android:id="@+id/txt_req_to"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="@color/app_color_black"
+                            android:textSize="14sp" />
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView android:fontFamily="@font/gisha_0"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:padding="5dp"
+                            android:text="IFSC Code"
+                            android:gravity="right"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="@color/app_color_black"
+                            android:textSize="14sp" />
+                        <TextView android:fontFamily="@font/gisha_0"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:padding="5dp"
+                            android:layout_weight="1"
+                            android:text=""
+                            android:gravity="left"
+                            android:id="@+id/txt_req_ifsc_code"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="@color/app_color_black"
+                            android:textSize="14sp" />
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView android:fontFamily="@font/gisha_0"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:padding="5dp"
+                            android:text="Bank Name"
+                            android:gravity="right"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="@color/app_color_black"
+                            android:textSize="14sp" />
+                        <TextView android:fontFamily="@font/gisha_0"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:padding="5dp"
+                            android:layout_weight="1"
+                            android:text=""
+                            android:gravity="left"
+                            android:id="@+id/txt_req_bank_name"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="@color/app_color_black"
+                            android:textSize="14sp" />
+
+
+                    </LinearLayout>
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView android:fontFamily="@font/gisha_0"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:padding="5dp"
+                            android:text="Branch Name"
+                            android:gravity="right"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="@color/app_color_black"
+                            android:textSize="14sp" />
+                        <TextView android:fontFamily="@font/gisha_0"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:padding="5dp"
+                            android:layout_weight="1"
+                            android:text=""
+                            android:gravity="left"
+                            android:id="@+id/txt_req_branch_name"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="@color/app_color_black"
+                            android:textSize="14sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:orientation="horizontal">
+                        <TextView android:fontFamily="@font/gisha_0"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:padding="5dp"
+                            android:text="Tranaction Type"
+                            android:gravity="right"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="@color/app_color_black"
+                            android:textSize="14sp" />
+                        <TextView android:fontFamily="@font/gisha_0"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:padding="5dp"
+                            android:layout_weight="1"
+                            android:text="NEFT"
+                            android:gravity="left"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="@color/app_color_black"
+                            android:textSize="14sp" />
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:visibility="gone"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Note : "
+                        android:textStyle="bold"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Your wallet amount transfer with in 24 hours"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView android:fontFamily="@font/gisha_0"
+                        android:id="@+id/txt_submit"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"
+                        android:layout_marginEnd="3dp"
+                        android:layout_marginRight="3dp"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:background="@drawable/bg_blue_circle_rectangle"
+                        android:text="@android:string/ok"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@color/app_color_white"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</LinearLayout>

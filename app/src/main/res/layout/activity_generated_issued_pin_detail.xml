@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolbarlayout"
+        layout="@layout/toolbar"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent" />
+
+    <android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/drawer_layout"
+        android:layout_below="@id/toolbarlayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        tools:openDrawer="start">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView android:fontFamily="@font/gisha_0"
+                android:id="@+id/txt_heading"
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:layout_gravity="center"
+                android:background="#328D6E"
+
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="Generated/Issued Pin Details"
+                android:textAllCaps="false"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@android:color/white"
+                tools:ignore="Deprecated,HardcodedText" />
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@android:color/white"
+                android:fillViewport="false"
+                android:nestedScrollingEnabled="true">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginEnd="15dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="30dp"
+                        android:layout_weight=".7"
+                        android:background="@android:color/white"
+                        android:orientation="vertical"
+                        android:visibility="visible">
+
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="10dp"
+                            android:gravity="bottom"
+                            android:minHeight="52dp">
+
+                            <android.support.design.widget.TextInputEditText android:fontFamily="@font/gisha_0"
+                                android:id="@+id/txt_from_date"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:background="@drawable/bg_orange_bottom_line"
+                                android:drawableRight="@drawable/ic_expand_more_white"
+                                android:editable="false"
+                                android:focusableInTouchMode="false"
+
+                                android:hint="From Date"
+                                android:inputType="none"
+                                android:minHeight="40dp"
+                                android:singleLine="true"
+                                android:spinnerMode="dialog"
+                                android:textAllCaps="true"
+                                android:textSize="13sp"
+                                tools:ignore="Deprecated" />
+                        </android.support.design.widget.TextInputLayout>
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="10dp"
+                            android:gravity="bottom"
+                            android:minHeight="52dp">
+
+                            <android.support.design.widget.TextInputEditText android:fontFamily="@font/gisha_0"
+                                android:id="@+id/txt_to_date"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:background="@drawable/bg_orange_bottom_line"
+                                android:drawableRight="@drawable/ic_expand_more_white"
+                                android:editable="false"
+                                android:focusableInTouchMode="false"
+
+
+                                android:hint="To Date"
+                                android:inputType="none"
+                                android:minHeight="40dp"
+                                android:singleLine="true"
+                                android:spinnerMode="dialog"
+                                android:textAllCaps="true"
+                                android:textSize="13sp"
+                                tools:ignore="Deprecated" />
+                        </android.support.design.widget.TextInputLayout>
+
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:gravity="bottom"
+                            android:minHeight="52dp">
+
+                            <android.support.design.widget.TextInputEditText android:fontFamily="@font/gisha_0"
+                                android:id="@+id/txt_bill_type"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:background="@drawable/bg_orange_bottom_line"
+                                android:drawableRight="@drawable/ic_expand_more_white"
+                                android:editable="false"
+                                android:focusableInTouchMode="false"
+
+                                android:hint="Bill Type"
+
+                                android:inputType="none"
+                                android:minHeight="40dp"
+                                android:singleLine="true"
+                                android:spinnerMode="dialog"
+                                android:textAllCaps="true"
+                                android:textSize="13sp"
+                                tools:ignore="Deprecated" />
+                        </android.support.design.widget.TextInputLayout>
+
+
+                        <Button android:fontFamily="@font/gisha_0"
+                            android:id="@+id/btn_proceed"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/bg_blue_circle_rectangle"
+                            android:focusableInTouchMode="false"
+
+                            android:text="Proceed"
+                            android:textAllCaps="false"
+                            android:textColor="@android:color/white"
+                            android:textSize="18sp"
+                            tools:ignore="HardcodedText" />
+
+
+                        <LinearLayout
+                            android:id="@+id/ll_showData"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:visibility="gone">
+
+                            <TextView android:fontFamily="@font/gisha_0"
+                                android:id="@+id/txt_count"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginBottom="10dp"
+                                android:layout_weight="1"
+
+                                android:gravity="center_vertical"
+                                android:textColor="@color/color__bg_orange"
+                                android:textSize="14sp"
+                                android:visibility="visible" />
+
+                            <HorizontalScrollView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:scrollbars="none"
+                                android:visibility="visible">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical">
+
+                                    <TableLayout
+                                        android:id="@+id/displayLinear"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="vertical"
+                                        android:paddingBottom="15dp"></TableLayout>
+
+
+                                </LinearLayout>
+
+                            </HorizontalScrollView>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+            </ScrollView>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:background="@color/colorPrimaryDark" />
+
+        </LinearLayout>
+
+
+        <android.support.design.widget.NavigationView
+            android:id="@+id/nav_view"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:fitsSystemWindows="true"
+            app:headerLayout="@layout/nav_header_home_">
+
+            <ExpandableListView
+                android:id="@+id/left_drawer"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="120dp"
+                android:background="@android:color/white"
+                android:childDivider="#eeeeee"
+                android:divider="@android:color/transparent"
+                android:dividerHeight="0dp"
+                android:groupIndicator="@null"
+                android:scrollbars="none"
+                android:smoothScrollbar="true" />
+
+        </android.support.design.widget.NavigationView>
+
+    </android.support.v4.widget.DrawerLayout>
+
+</LinearLayout>

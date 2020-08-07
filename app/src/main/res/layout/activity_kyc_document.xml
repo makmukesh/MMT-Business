@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context=".KYCUploadDocument_Activity">
+
+    <include
+        layout="@layout/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView android:fontFamily="@font/gisha_0"
+        android:id="@+id/txt_heading"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:layout_gravity="center"
+        android:background="#328D6E"
+
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="@string/upload_kyc"
+        android:textAllCaps="false"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@android:color/white"
+        tools:ignore="Deprecated,HardcodedText" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:background="@android:color/white"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/layout_profile_Photo"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="15dp"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+
+                    <TextView android:fontFamily="@font/gisha_0"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="Distributor's Photo"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@color/color__bg_orange"
+                        tools:ignore="HardcodedText" />
+
+                    <ImageView
+                        android:id="@+id/imgView_profile_Photo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="10dp"
+                        android:adjustViewBounds="true"
+                        android:src="@drawable/upload"
+                        tools:ignore="ContentDescription" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout_AdrsProf"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginTop="15dp"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+
+                    <TextView android:fontFamily="@font/gisha_0"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+
+                        android:gravity="center"
+                        android:padding="3dp"
+                        android:text="Address Proof"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@color/color__bg_orange"
+                        tools:ignore="HardcodedText" />
+
+                    <TextView android:fontFamily="@font/gisha_0"
+                        android:id="@+id/textView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:gravity="center"
+                        android:paddingEnd="5dp"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:paddingStart="5dp"
+                        android:text="( Passport / Voter ID Card / Ration Card / Aadhaar Card / Driving License / Utility Bills (water, electricity, phone or gas bill) / Rental Agreement )"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@android:color/black"
+                        android:textSize="12sp"
+                        tools:ignore="HardcodedText" />
+
+                    <ImageView
+                        android:id="@+id/imgView_AdrsProf"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="10dp"
+                        android:adjustViewBounds="true"
+                        android:src="@drawable/upload"
+                        tools:ignore="ContentDescription" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout_IdProf"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginBottom="15dp"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+
+                    <TextView android:fontFamily="@font/gisha_0"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+
+                        android:gravity="center"
+                        android:padding="3dp"
+                        android:text="Identity Proof"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@color/color__bg_orange"
+                        tools:ignore="HardcodedText" />
+
+                    <TextView android:fontFamily="@font/gisha_0"
+                        android:id="@+id/textView5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:gravity="center"
+                        android:paddingEnd="5dp"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:paddingStart="5dp"
+                        android:text="( Passport / Voter ID Card / PAN Card / Aadhaar Card / Driving License )"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@android:color/black"
+                        android:textSize="12sp"
+                        tools:ignore="HardcodedText" />
+
+                    <ImageView
+                        android:id="@+id/imgView_IdProf"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="10dp"
+                        android:adjustViewBounds="true"
+                        android:src="@drawable/upload"
+                        tools:ignore="ContentDescription" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout_Cancelled_Cheque"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="15dp"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+
+                    <TextView android:fontFamily="@font/gisha_0"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="Cancelled Cheque"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@color/color__bg_orange"
+                        tools:ignore="HardcodedText" />
+
+                    <ImageView
+                        android:id="@+id/imgView_Cancelled_Cheque"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="10dp"
+                        android:adjustViewBounds="true"
+                        android:src="@drawable/upload"
+                        tools:ignore="ContentDescription" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+    <include layout="@layout/bottom_sheet" />
+
+</LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+        android:background="@color/colorPrimaryDark" />
+</LinearLayout>

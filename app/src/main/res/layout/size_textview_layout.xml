@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView android:fontFamily="@font/gisha_0"
+        android:id="@+id/txt_size"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/rounded_view_or"
+        android:gravity="center"
+        android:textColor="@color/round_view_or_selector"
+        android:textSize="14sp" />
+
+</LinearLayout>

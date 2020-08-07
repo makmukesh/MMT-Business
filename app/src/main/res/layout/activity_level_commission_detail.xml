@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/app_color_white"
+    tools:context="com.vpipl.mmtbusiness.Sponsor_team_details_Activity">
+
+    <include
+        layout="@layout/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/txt_heading"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:layout_gravity="center"
+        android:background="#328D6E"
+        android:fontFamily="@font/gisha_0"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="Level Commission Detail Report"
+        android:textAllCaps="false"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@android:color/white"
+        tools:ignore="Deprecated,HardcodedText" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:nestedScrollingEnabled="false"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight=".7"
+                android:background="@android:color/white"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:gravity="bottom"
+                    android:minHeight="52dp">
+
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/txt_package_Name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@drawable/bg_orange_bottom_line"
+                        android:drawableRight="@drawable/ic_expand_more_white"
+                        android:editable="false"
+                        android:focusableInTouchMode="false"
+                        android:fontFamily="@font/gisha_0"
+
+                        android:hint="Session"
+                        android:inputType="none"
+                        android:minHeight="40dp"
+                        android:singleLine="true"
+                        android:spinnerMode="dialog"
+                        android:textAllCaps="true"
+                        android:textSize="13sp"
+                        tools:ignore="Deprecated" />
+                </android.support.design.widget.TextInputLayout>
+
+
+                <Button android:fontFamily="@font/gisha_0"
+                    android:id="@+id/btn_proceed"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/bg_blue_circle_rectangle"
+                    android:focusableInTouchMode="false"
+                    android:text="Proceed"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/white"
+                    android:textSize="18sp"
+                    tools:ignore="HardcodedText" />
+
+                <LinearLayout
+                    android:id="@+id/ll_showData"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+
+                    <HorizontalScrollView
+                        android:id="@+id/HSV"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="5dp"
+                        android:scrollbars="none"
+                        android:visibility="visible">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TableLayout
+                                android:id="@+id/displayLinear"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:layout_alignParentStart="true"
+                                android:layout_alignParentTop="true"
+                                android:layout_marginBottom="10dp"
+                                android:orientation="vertical"></TableLayout>
+
+                            <!--<ListView-->
+                            <!--android:id="@+id/lv"-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="match_parent" />-->
+
+
+                        </RelativeLayout>
+
+                    </HorizontalScrollView>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+        android:background="@color/colorPrimaryDark" />
+
+</LinearLayout>

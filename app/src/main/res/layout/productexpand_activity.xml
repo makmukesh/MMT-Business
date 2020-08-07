@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:animateLayoutChanges="true"
+    android:clipToPadding="false"
+    android:focusable="true"
+
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    tools:context=".ProductExpand_Activity">
+
+    <include
+        layout="@layout/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:id="@+id/ll_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:animateLayoutChanges="true"
+        android:maxHeight="44dp"
+        android:minHeight="44dp"
+        android:padding="0.5dp"
+        android:visibility="visible">
+
+        <EditText
+            android:id="@+id/et_search"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:animateLayoutChanges="true"
+            android:background="@drawable/bg_round_rectangle_white"
+            android:cursorVisible="true"
+            android:drawableLeft="@drawable/ic_search_small"
+            android:drawablePadding="5dp"
+            android:drawableStart="@drawable/ic_search_small"
+            android:fontFamily="@font/gisha_0"
+            android:hint="@string/hint_et_search"
+            android:imeOptions="actionSearch"
+            android:inputType="text"
+            android:maxHeight="44dp"
+            android:minHeight="44dp"
+            android:paddingLeft="10dp"
+            android:paddingStart="10dp"
+            android:singleLine="true"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@android:color/black"
+            android:textColorHint="@color/app_color_gray_dark"
+            android:textSize="14sp"
+            android:windowSoftInputMode="stateHidden"
+            tools:ignore="Deprecated" />
+
+        <TextView android:id="@+id/speakButton"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:padding="3dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/ic_mic_voice_search"
+            android:text="" />
+
+    </LinearLayout>
+
+    <com.vpipl.mmtbusiness.Utils.AnimatedExpandableListView
+        android:id="@+id/expandSubCatListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="@android:color/white"
+        android:childDivider="#eeeeee"
+        android:choiceMode="singleChoice"
+        android:divider="@drawable/list_divider"
+        android:dividerHeight="1dp"
+        android:footerDividersEnabled="false"
+        android:headerDividersEnabled="false"
+        android:nestedScrollingEnabled="true"
+        android:scrollbars="none" />
+
+</LinearLayout>
+
+

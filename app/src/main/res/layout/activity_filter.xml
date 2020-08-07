@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Filter_Activity">
+
+    <include
+        layout="@layout/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="40dp"
+            android:baselineAligned="false"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView android:fontFamily="@font/gisha_0"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Price" />
+
+            <com.vpipl.mmtbusiness.Utils.CrystalRangeSeekbar
+                android:id="@+id/rangeSeekbar1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                app:bar_color="#cccccc"
+                app:bar_highlight_color="#eeeeee"
+                app:left_thumb_color="@color/app_color_blue_light"
+                app:max_value="10000"
+                app:min_value="0"
+                app:right_thumb_color="@color/app_color_blue_light" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clipChildren="false"
+                android:orientation="horizontal">
+
+                <TextView android:fontFamily="@font/gisha_0"
+                    android:id="@+id/textMin1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="0"
+                    android:textColor="#000"
+                    android:textSize="16sp" />
+
+                <TextView android:fontFamily="@font/gisha_0"
+                    android:id="@+id/textMax1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right|end"
+                    android:text="0"
+                    android:textColor="#000"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+            <TextView android:fontFamily="@font/gisha_0"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="Discount"
+                android:visibility="gone" />
+
+            <com.vpipl.mmtbusiness.Utils.CrystalRangeSeekbar
+                android:id="@+id/rangeSeekbar2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:visibility="gone"
+                app:bar_color="#cccccc"
+                app:bar_highlight_color="#eeeeee"
+                app:left_thumb_color="@color/app_color_blue_light"
+                app:max_value="10000"
+                app:min_value="0"
+                app:right_thumb_color="@color/app_color_blue_light" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clipChildren="false"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView android:fontFamily="@font/gisha_0"
+                    android:id="@+id/textMin2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="0"
+                    android:textColor="#000"
+                    android:textSize="16sp" />
+
+                <TextView android:fontFamily="@font/gisha_0"
+                    android:id="@+id/textMax2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right|end"
+                    android:text="0"
+                    android:textColor="#000"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/layout_listViewSize"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <TextView android:fontFamily="@font/gisha_0"
+                    android:id="@+id/txt_selectSize"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="Size"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textSize="14sp" />
+
+                <com.vpipl.mmtbusiness.Utils.HorizontalListView
+                    android:id="@+id/listview_size"
+                    android:layout_width="fill_parent"
+                    android:layout_height="45dp"
+                    android:background="@android:color/white"
+                    android:choiceMode="singleChoice"
+                    android:listSelector="@drawable/rounded_view_or" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="15dp"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView android:fontFamily="@font/gisha_0"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:singleLine="true"
+                        android:text="Color"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textSize="14sp" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/black"
+                        android:padding="1dp"
+                        android:visibility="gone">
+
+                        <ImageView
+                            android:contentDescription="@string/app_name"
+                            android:layout_width="20dp"
+                            android:layout_height="match_parent"
+                            app:srcCompat="@drawable/home_gradient_top" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <com.vpipl.mmtbusiness.Utils.HorizontalListView
+                    android:layout_width="fill_parent"
+                    android:layout_height="45dp"
+                    android:background="@android:color/white"
+                    android:choiceMode="singleChoice" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:gravity="bottom"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <Button android:fontFamily="@font/gisha_0"
+                android:id="@+id/btn_clearFilter"
+                android:layout_width="fill_parent"
+                android:layout_height="45dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_blue_circle_green"
+
+                android:text="Clear Filters"
+                android:textAllCaps="true"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText" />
+
+
+            <Button android:fontFamily="@font/gisha_0"
+                android:id="@+id/btn_apply"
+                android:layout_width="fill_parent"
+                android:layout_height="45dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_blue_circle_rectangle"
+
+                android:text="APPLY"
+                android:textAllCaps="true"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText" />
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

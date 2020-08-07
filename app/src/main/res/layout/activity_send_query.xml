@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context="com.vpipl.mmtbusiness.Login_Activity"
+    android:background="@android:color/white">
+
+    <include layout="@layout/toolbar"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"/>
+
+    <TextView android:fontFamily="@font/gisha_0"
+        android:id="@+id/txt_heading"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:layout_gravity="center"
+        android:background="#328D6E"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="Enquiry"
+        android:textAllCaps="false"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@android:color/white"
+        tools:ignore="Deprecated,HardcodedText" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="30dp"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="bottom"
+            android:minHeight="52dp">
+
+            <android.support.design.widget.TextInputEditText android:fontFamily="@font/gisha_0"
+                android:id="@+id/edtxt_username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/edittext_bottom_line"
+                android:editable="false"
+                android:hint="Name"
+                android:inputType="none"
+                android:maxLines="1"
+                android:minHeight="40dp"
+                android:singleLine="true"
+                android:textAllCaps="true"
+                android:textSize="13sp"
+                tools:ignore="Deprecated,HardcodedText" />
+
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="bottom"
+            android:minHeight="52dp">
+
+            <android.support.design.widget.TextInputEditText android:fontFamily="@font/gisha_0"
+                android:id="@+id/edtxt_mobileNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittext_bottom_line"
+
+                android:hint="Mobile Number"
+                android:imeOptions="actionUnspecified"
+                android:inputType="phone"
+                android:maxLength="10"
+                android:maxLines="1"
+                android:minHeight="40dp"
+                android:singleLine="true"
+                android:textSize="14sp"
+                tools:ignore="Deprecated" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="bottom"
+            android:minHeight="52dp">
+
+            <android.support.design.widget.TextInputEditText android:fontFamily="@font/gisha_0"
+                android:id="@+id/edtxt_userEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/edittext_bottom_line"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                android:maxLines="1"
+                android:minHeight="40dp"
+                android:singleLine="true"
+                android:textAllCaps="true"
+                android:textSize="13sp"
+                tools:ignore="Deprecated,HardcodedText" />
+
+
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:gravity="bottom"
+            android:minHeight="52dp">
+
+            <android.support.design.widget.TextInputEditText android:fontFamily="@font/gisha_0"
+                android:id="@+id/txt_subject"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/edittext_bottom_line"
+                android:editable="true"
+                android:hint="Query Subject"
+                android:inputType="textEmailSubject"
+                android:minHeight="40dp"
+                android:singleLine="false"
+                android:textAllCaps="true"
+                android:textSize="13sp"
+                tools:ignore="Deprecated,HardcodedText" />
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:gravity="bottom"
+            android:minHeight="52dp">
+
+            <android.support.design.widget.TextInputEditText android:fontFamily="@font/gisha_0"
+                android:id="@+id/edtxt_user_Query"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittext_bottom_line"
+                android:hint="Query"
+                android:imeOptions="actionUnspecified"
+                android:inputType="text"
+                android:maxLines="1"
+                android:minHeight="40dp"
+                android:singleLine="true"
+                android:textSize="14sp"
+                tools:ignore="Deprecated" />
+
+        </android.support.design.widget.TextInputLayout>
+
+
+    </LinearLayout>
+
+    <Button android:fontFamily="@font/gisha_0"
+        android:id="@+id/button_send"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="10dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bg_blue_circle_rectangle"
+        android:focusableInTouchMode="false"
+        android:text="Send"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="18sp" />
+    </LinearLayout>
+    </ScrollView>
+</LinearLayout>

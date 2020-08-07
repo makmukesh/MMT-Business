@@ -1,0 +1,560 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/app_color_white"
+    tools:context=".Sponsor_team_details_Activity">
+
+    <include
+        layout="@layout/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:nestedScrollingEnabled="false"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <TextView android:fontFamily="@font/gisha_0"
+                android:id="@+id/txt_heading"
+                android:layout_width="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:background="#328D6E"
+                android:singleLine="true"
+                android:text="@string/sponsor_downline"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/app_color_white"
+                android:textAllCaps="true"
+                android:layout_height="46dp"
+                tools:ignore="Deprecated" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/color_green_text" />
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight=".7"
+                android:background="@android:color/white"
+                android:orientation="vertical"
+                android:visibility="visible"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginStart="15dp">
+
+                <CheckBox android:fontFamily="@font/gisha_0"
+                    android:text="By Joining Date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/cb_joining"
+                    android:textColor="#666666"
+                    android:layout_marginBottom="3dp"
+                    tools:ignore="HardcodedText" />
+
+                <LinearLayout
+                    android:id="@+id/ll_joining"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <TextView android:fontFamily="@font/gisha_0"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="From Date"
+                        android:textSize="14sp"
+                        android:visibility="visible"
+                        android:textColor="@android:color/black"
+                        tools:ignore="HardcodedText" />
+
+                    <TextView android:fontFamily="@font/gisha_0"
+                        android:background="@drawable/edittext_bottom_line"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/txt_from_joining"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="5dp"
+                        android:textSize="12sp"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp" />
+
+                    <TextView android:fontFamily="@font/gisha_0"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="To Date"
+                        android:textSize="14sp"
+                        android:visibility="visible"
+                        android:textColor="@android:color/black"
+                        tools:ignore="HardcodedText" />
+
+                    <TextView android:fontFamily="@font/gisha_0"
+                        android:background="@drawable/edittext_bottom_line"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/txt_to_joining"
+                        android:layout_marginTop="5dp"
+                        android:textSize="12sp"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp" />
+                </LinearLayout>
+
+                <CheckBox android:fontFamily="@font/gisha_0"
+                    android:text="By Activation Date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/cb_activation"
+                    android:textColor="#666666"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="3dp"
+                    tools:ignore="HardcodedText" />
+
+                <LinearLayout
+                    android:id="@+id/ll_activation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <TextView android:fontFamily="@font/gisha_0"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="From Date"
+                        android:textSize="14sp"
+                        android:visibility="visible"
+                        android:textColor="@android:color/black"
+                        tools:ignore="HardcodedText" />
+
+                    <TextView android:fontFamily="@font/gisha_0"
+                        android:background="@drawable/edittext_bottom_line"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/txt_from_activation"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="5dp"
+                        android:textSize="12sp"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp" />
+
+                    <TextView android:fontFamily="@font/gisha_0"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="To Date"
+                        android:textSize="14sp"
+                        android:visibility="visible"
+                        android:textColor="@android:color/black"
+                        tools:ignore="HardcodedText" />
+
+                    <TextView android:fontFamily="@font/gisha_0"
+                        android:background="@drawable/edittext_bottom_line"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/txt_to_activation"
+                        android:layout_marginTop="5dp"
+                        android:textSize="12sp"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp" />
+                </LinearLayout>
+
+                <CheckBox android:fontFamily="@font/gisha_0"
+                    android:text="By Activation Week"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/cb_activation_week"
+                    android:textColor="#666666"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="3dp"
+                    tools:ignore="HardcodedText" />
+
+                <LinearLayout
+                    android:id="@+id/ll_activation_week"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:visibility="gone"
+                    android:layout_marginBottom="5dp">
+
+                    <TextView android:fontFamily="@font/gisha_0"
+                        android:background="@drawable/edittext_bottom_line"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/txt_activation_week"
+                        android:layout_marginTop="5dp"
+                        android:textSize="12sp"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp" />
+                </LinearLayout>
+
+                <TextView android:fontFamily="@font/gisha_0"
+                    android:layout_marginBottom="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Side"
+                    android:textSize="14sp"
+                    android:visibility="visible"
+                    android:textColor="@android:color/black"
+                    tools:ignore="HardcodedText" />
+
+
+                <RadioGroup
+                    android:id="@+id/rg_side"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:orientation="horizontal"
+                    android:visibility="visible">
+
+                    <RadioButton android:fontFamily="@font/gisha_0"
+                        android:id="@+id/rb_left"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:checked="true"
+                        android:text="Left"
+                        android:textColor="#666666"
+
+                        android:textSize="14sp"
+                        android:layout_weight="1"
+                        android:visibility="visible"
+                        tools:ignore="HardcodedText" />
+
+                    <RadioButton android:fontFamily="@font/gisha_0"
+                        android:id="@+id/rb_right"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:text="Right"
+                        android:textColor="#666666"
+                        android:textSize="14sp"
+                        android:layout_weight="1"
+                        android:visibility="visible"
+                        tools:ignore="HardcodedText" />
+                    <RadioButton android:fontFamily="@font/gisha_0"
+                        android:id="@+id/rb_all"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:text="All"
+                        android:textColor="#666666"
+                        android:textSize="14sp"
+                        android:layout_weight="1"
+                        android:visibility="visible"
+                        tools:ignore="HardcodedText"
+                         />
+                </RadioGroup>
+
+                <TextView android:fontFamily="@font/gisha_0"
+                    android:layout_marginBottom="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Status"
+                    android:textSize="14sp"
+                    android:visibility="visible"
+                    android:textColor="@android:color/black"
+                    tools:ignore="HardcodedText" />
+
+
+                <RadioGroup
+                    android:id="@+id/rg_view_detail_for"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:orientation="horizontal"
+                    android:visibility="visible">
+
+                    <RadioButton android:fontFamily="@font/gisha_0"
+                        android:id="@+id/rb_both"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:text="Both"
+                        android:textColor="#666666"
+                        android:textSize="14sp"
+                        android:layout_weight="1"
+                        android:visibility="visible"
+                        tools:ignore="HardcodedText" />
+
+                    <RadioButton android:fontFamily="@font/gisha_0"
+                        android:id="@+id/rb_used"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                                 android:checked="true"
+                                 android:text="Paid"
+                        android:textColor="#666666"
+                        android:textSize="14sp"
+                        android:layout_weight="1"
+                        android:visibility="visible"
+                        tools:ignore="HardcodedText" />
+                    <RadioButton android:fontFamily="@font/gisha_0"
+                        android:id="@+id/rb_unused"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:text="Un-Paid"
+                        android:textColor="#666666"
+                        android:textSize="14sp"
+                        android:layout_weight="1"
+                        android:visibility="visible"
+                        tools:ignore="HardcodedText" />
+                </RadioGroup>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="bottom"
+                    android:minHeight="52dp"
+                    android:layout_marginBottom="5dp">
+
+
+                    <android.support.design.widget.TextInputEditText android:fontFamily="@font/gisha_0"
+                        android:id="@+id/txt_package_Name"
+                        android:editable="false"
+                        android:spinnerMode="dialog"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Package Name"
+                        android:inputType="none"
+                        android:minHeight="40dp"
+                        android:singleLine="true"
+                        android:textSize="13sp"
+                        android:textAllCaps="true"
+                        android:background="@drawable/edittext_bottom_line"
+                        android:layout_gravity="center"
+                        tools:ignore="Deprecated" />
+                </android.support.design.widget.TextInputLayout>
+
+
+                <Button android:fontFamily="@font/gisha_0"
+                    android:id="@+id/btn_proceed"
+                    android:text="Proceed"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:focusableInTouchMode="false"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/white"
+                    android:textSize="18sp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/bg_blue_circle_rectangle"
+                    android:layout_marginBottom="10dp"
+                    tools:ignore="HardcodedText" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:id="@+id/ll_showData"
+                    android:layout_height="wrap_content"
+                    android:visibility="visible">
+
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:visibility="visible"
+                        android:background="@android:color/black"
+                        android:padding="0.5dp">
+
+                        <TextView android:fontFamily="@font/gisha_0"
+                            android:text="Particulars"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@android:color/white"
+                            android:layout_marginRight="0.5dp" />
+
+                        <TextView android:fontFamily="@font/gisha_0"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="Left"
+                            android:textSize="14sp"
+                            android:visibility="visible"
+                            tools:ignore="HardcodedText"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:background="@android:color/white"
+                            android:layout_marginRight="0.5dp" />
+
+                        <TextView android:fontFamily="@font/gisha_0"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="Right"
+                            android:textSize="14sp"
+                            android:visibility="visible"
+                            tools:ignore="HardcodedText"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:background="@android:color/white" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:visibility="visible"
+                        android:background="@android:color/black"
+                        android:paddingBottom="0.5dp"
+                        android:paddingEnd="0.5dp"
+                        android:paddingLeft="0.5dp"
+                        android:paddingRight="0.5dp"
+                        android:paddingStart="0.5dp">
+
+                        <TextView android:fontFamily="@font/gisha_0"
+                            android:text="Paid Members"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@android:color/white"
+                            android:layout_marginRight="0.5dp" />
+
+                        <TextView android:fontFamily="@font/gisha_0"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:textSize="14sp"
+                            android:visibility="visible"
+                            android:textColor="@android:color/black"
+                            tools:ignore="HardcodedText"
+                            android:id="@+id/txt_left_paid_members"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:background="@android:color/white"
+                            android:layout_marginRight="0.5dp" />
+
+                        <TextView android:fontFamily="@font/gisha_0"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:textSize="14sp"
+                            android:visibility="visible"
+                            android:textColor="@android:color/black"
+                            tools:ignore="HardcodedText"
+                            android:id="@+id/txt_right_paid_members"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:background="@android:color/white" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:visibility="visible"
+                        android:background="@android:color/black"
+                        android:paddingStart="0.5dp"
+                        android:paddingRight="0.5dp"
+                        android:paddingLeft="0.5dp"
+                        android:paddingEnd="0.5dp"
+                        android:paddingBottom="0.5dp">
+
+                        <TextView android:fontFamily="@font/gisha_0"
+                            android:text="Total"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@android:color/white"
+                            android:layout_marginRight="0.5dp" />
+
+                        <TextView android:fontFamily="@font/gisha_0"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:textSize="14sp"
+                            android:visibility="visible"
+                            android:textColor="@android:color/black"
+                            tools:ignore="HardcodedText"
+                            android:id="@+id/txt_left_total_members"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:background="@android:color/white"
+                            android:layout_marginRight="0.5dp" />
+
+                        <TextView android:fontFamily="@font/gisha_0"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:textSize="14sp"
+                            android:visibility="visible"
+                            android:textColor="@android:color/black"
+                            tools:ignore="HardcodedText"
+                            android:id="@+id/txt_right_total_members"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:background="@android:color/white" />
+                    </LinearLayout>
+
+
+                    <TextView android:fontFamily="@font/gisha_0"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/txt_count"
+                        android:layout_weight="1"
+                        android:textColor="@color/color__bg_orange"
+                        android:layout_marginTop="5dp" />
+
+                    <HorizontalScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scrollbars="none"
+                        android:visibility="visible"
+                        android:layout_marginTop="5dp"
+                        android:id="@+id/HSV">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TableLayout
+                                android:id="@+id/displayLinear"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_alignParentStart="true"
+                                android:layout_alignParentTop="true"
+                                android:layout_alignParentLeft="true"
+                                android:background="@android:color/black"
+                                android:padding="0.5dp"
+                                android:layout_marginBottom="10dp">
+                            </TableLayout>
+
+                            <!--<ListView-->
+                            <!--android:id="@+id/lv"-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="match_parent" />-->
+
+                            <Button android:fontFamily="@font/gisha_0"
+                                android:id="@+id/btn_load_more"
+                                android:text="Load More"
+                                android:layout_width="wrap_content"
+                                android:layout_height="40dp"
+                                android:focusableInTouchMode="false"
+                                android:textAllCaps="false"
+                                android:textColor="@android:color/white"
+                                android:textSize="18sp"
+                                android:background="@drawable/bg_blue_circle_rectangle"
+                                android:layout_marginBottom="10dp"
+                                android:layout_below="@+id/displayLinear"
+                                android:minWidth="120dp"
+                                tools:ignore="HardcodedText" />
+
+
+                        </RelativeLayout>
+
+                    </HorizontalScrollView>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

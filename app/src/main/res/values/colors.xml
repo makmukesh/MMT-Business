@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#07568C</color>
+    <color name="colorPrimaryDark">#038CB2</color>
+    <color name="colorAccent">#52A8C1</color>
+
+    <color name="app_color_green_one">#9EC316</color>
+
+    <color name="color_green_text">#9EC316</color>
+    <color name="color__bg_orange">#F37B49</color>
+
+    <color name="background_color_text_grey">#eeeeee</color>
+    <color name="color_text_grey">#626262</color>
+
+
+    <color name="color_gradient_one">#9EC316</color>
+    <color name="color_gradient_two">#9EC316</color>
+
+    <!--Color Related to Home-->
+  <color name="color_bg_product_images">#f7f7f7</color>
+  <color name="color_border_product_images">#dddddd</color>
+
+    <color name="color_666666">#666666</color>
+    <color name="color_eeeeee">#eeeeee</color>
+
+
+    <!--DashBoard Colors-->
+    <color name="color_table_row">#edf8e8</color>
+
+
+    <!-- for Bottom sheet color -->
+
+    <!-- Color for shadow of button -->
+
+    <!-- Color for Apps -->
+
+    <color name="app_color_white">#FFFFFF</color>
+    <color name="app_color_black">#000000</color>
+
+    <color name="app_color_blue_light">#3F51B5</color>
+
+    <!-- Color for Swipe Refresh Layout -->
+
+    <!-- for Bottom sheet color -->
+
+    <!-- Color for shadow of button -->
+
+    <!-- Color for Apps -->
+    <color name="app_color_red">#e70404</color>
+    <color name="app_color_cream_dark">#D6D6D6</color>
+    <color name="app_color_gray_dark">#666666</color>
+    <color name="app_color_grayicon">#666666</color>
+
+    <color name="table_Heading_Columns">#53a1c5</color>
+<color name="table_row_one">#f1f8fa</color>
+<color name="table_row_two">#e1eff5</color>
+    <color name="text_color_hint">#FF424242</color>
+
+
+    <!--Color Related to Home-->
+    <color name="color_cccccc">#cccccc</color>
+
+    <!--DashBoard Colors-->
+
+    <!-- Color for shadow of button -->
+
+    <color name="login_text_color">#898989</color>
+
+    <!--Color Related to Login-->
+    <color name="color_dark_blue_login">#035dab</color>
+    <color name="color_pink_logo">#bd1a77</color>
+
+    <color name="gray_more_light">#338D8A8A</color>
+    <color name="gray_light">#F7F7F7</color>
+    <color name="transparent">#00ffffff</color>
+
+    <color name="teal">#009688</color>
+    <color name="black_87">#DD000000</color>
+    <color name="black_54">#89000000</color>
+
+</resources>

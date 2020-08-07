@@ -1,0 +1,1088 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView android:fontFamily="@font/gisha_0"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:layout_gravity="center"
+        android:background="#328D6E"
+
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="View Profile"
+        android:textAllCaps="false"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@android:color/white"
+        tools:ignore="Deprecated,HardcodedText" />
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/table_row_two"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_weight=".7"
+                android:orientation="vertical">
+
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="visible">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/white"
+                        android:orientation="vertical">
+
+                        <!--Personal-->
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:background="#00ACAC"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="40dp"
+                                android:layout_height="match_parent"
+                                android:adjustViewBounds="true"
+                                app:srcCompat="@drawable/reg_icon_personal_details" />
+
+                            <TextView android:fontFamily="@font/gisha_0"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+
+
+                                android:paddingBottom="10dp"
+                                android:paddingEnd="10dp"
+                                android:paddingLeft="5dp"
+                                android:paddingRight="10dp"
+                                android:paddingStart="5dp"
+                                android:paddingTop="10dp"
+                                android:text="@string/personal_detail"
+                                android:textColor="@android:color/white"
+                                android:textSize="18sp"
+                                android:visibility="visible" />
+                        </LinearLayout>
+
+                        <TextView android:fontFamily="@font/gisha_0"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginStart="10dp"
+
+
+                            android:text="Package"
+                            android:textColor="@color/colorAccent"
+                            android:textSize="12sp"
+                            android:visibility="visible" />
+
+                        <TextView android:fontFamily="@font/gisha_0"
+                            android:id="@+id/txt_package"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginStart="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/bg_orange_bottom_line"
+
+
+                            android:paddingBottom="5dp"
+                            android:paddingTop="5dp"
+                            android:textColor="@android:color/black"
+                            android:textSize="14sp"
+                            android:visibility="visible" />
+
+                        <TextView android:fontFamily="@font/gisha_0"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginStart="10dp"
+
+                            android:text="@string/txt_userId"
+                            android:textColor="@color/colorAccent"
+                            android:textSize="12sp"
+                            android:visibility="visible" />
+
+                        <TextView android:fontFamily="@font/gisha_0"
+                            android:id="@+id/txt_memberID"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginStart="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/bg_orange_bottom_line"
+
+                            android:paddingBottom="5dp"
+                            android:paddingTop="5dp"
+                            android:textColor="@android:color/black"
+                            android:textSize="14sp"
+                            android:visibility="visible" />
+
+                        <TextView android:fontFamily="@font/gisha_0"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginStart="10dp"
+
+                            android:text="@string/name"
+                            android:textColor="@color/colorAccent"
+                            android:textSize="12sp"
+                            android:visibility="visible" />
+
+                        <TextView android:fontFamily="@font/gisha_0"
+                            android:id="@+id/txt_memberName"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginStart="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/bg_orange_bottom_line"
+
+                            android:paddingBottom="5dp"
+                            android:paddingTop="5dp"
+                            android:textColor="@android:color/black"
+                            android:textSize="14sp"
+                            android:visibility="visible" />
+
+                        <TextView android:fontFamily="@font/gisha_0"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginStart="10dp"
+
+                            android:text="@string/guardian_name"
+                            android:textColor="@color/colorAccent"
+                            android:textSize="12sp"
+                            android:visibility="visible" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginStart="10dp"
+                            android:orientation="horizontal">
+
+
+                            <TextView android:fontFamily="@font/gisha_0"
+                                android:id="@+id/txt_prefix"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_marginEnd="3dp"
+                                android:layout_marginRight="3dp"
+                                android:background="@drawable/bg_orange_bottom_line"
+
+
+                                android:gravity="left|center_vertical"
+                                android:minWidth="60dp"
+                                android:paddingBottom="5dp"
+                                android:paddingTop="5dp"
+                                android:textColor="@android:color/black"
+                                android:textSize="14sp"
+                                android:visibility="visible">
+
+                            </TextView>
+
+                            <TextView android:fontFamily="@font/gisha_0"
+                                android:id="@+id/txt_father_name"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="3dp"
+                                android:layout_marginStart="3dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/bg_orange_bottom_line"
+
+
+                                android:paddingBottom="5dp"
+                                android:paddingTop="5dp"
+                                android:textColor="@android:color/black"
+                                android:textSize="14sp"
+                                android:visibility="visible" />
+
+                        </LinearLayout>
+
+                        <TextView android:fontFamily="@font/gisha_0"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginStart="10dp"
+
+                            android:text="@string/dob"
+                            android:textColor="@color/colorAccent"
+                            android:textSize="12sp"
+                            android:visibility="visible" />
+
+                        <TextView android:fontFamily="@font/gisha_0"
+                            android:id="@+id/txt_dob"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginStart="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/bg_orange_bottom_line"
+
+                            android:paddingBottom="5dp"
+                            android:paddingTop="5dp"
+                            android:textColor="@android:color/black"
+                            android:textSize="14sp"
+                            android:visibility="visible" />
+
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:visibility="visible">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/white"
+                        android:orientation="vertical">
+                        <!--Contact-->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:background="#E65250"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="40dp"
+                                android:layout_height="match_parent"
+                                android:adjustViewBounds="true"
+                                app:srcCompat="@drawable/reg_icon_contact_details" />
+
+                            <TextView android:fontFamily="@font/gisha_0"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+
+
+                                android:paddingBottom="10dp"
+                                android:paddingEnd="10dp"
+                                android:paddingLeft="5dp"
+                                android:paddingRight="10dp"
+                                android:paddingStart="5dp"
+                                android:paddingTop="10dp"
+                                android:text="@string/contact_detail"
+                                android:textColor="@android:color/white"
+                                android:textSize="18sp"
+                                android:visibility="visible" />
+                        </LinearLayout>
+
+                        <TextView android:fontFamily="@font/gisha_0"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginStart="10dp"
+
+                            android:text="@string/address"
+                            android:textColor="@color/colorAccent"
+                            android:visibility="visible" />
+
+                        <TextView android:fontFamily="@font/gisha_0"
+                            android:id="@+id/txt_address"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginStart="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/bg_orange_bottom_line"
+
+                            android:paddingBottom="5dp"
+                            android:paddingTop="5dp"
+                            android:textColor="@android:color/black"
+                            android:textSize="14sp"
+                            android:visibility="visible" />
+
+                        <TextView android:fontFamily="@font/gisha_0"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginStart="10dp"
+
+                            android:text="@string/txt_city"
+                            android:textColor="@color/colorAccent"
+                            android:visibility="visible" />
+
+                        <TextView android:fontFamily="@font/gisha_0"
+                            android:id="@+id/txt_city"
+                            android:layout_width="match_parent"
+
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginStart="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/bg_orange_bottom_line"
+
+                            android:paddingBottom="5dp"
+                            android:paddingTop="5dp"
+                            android:textColor="@android:color/black"
+                            android:textSize="14sp"
+                            android:visibility="visible" />
+
+                        <TextView android:fontFamily="@font/gisha_0"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginStart="10dp"
+
+                            android:text="@string/txt_district"
+                            android:textColor="@color/colorAccent"
+                            android:visibility="visible" />
+
+                        <TextView android:fontFamily="@font/gisha_0"
+                            android:id="@+id/txt_district"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginStart="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/bg_orange_bottom_line"
+
+                            android:paddingBottom="5dp"
+                            android:paddingTop="5dp"
+                            android:textColor="@android:color/black"
+                            android:textSize="14sp"
+                            android:visibility="visible" />
+
+                        <TextView android:fontFamily="@font/gisha_0"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginStart="10dp"
+
+                            android:text="@string/txt_state"
+                            android:textColor="@color/colorAccent"
+                            android:visibility="visible" />
+
+                        <TextView android:fontFamily="@font/gisha_0"
+                            android:id="@+id/txt_state"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginStart="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/bg_orange_bottom_line"
+
+                            android:paddingBottom="5dp"
+                            android:paddingTop="5dp"
+                            android:textColor="@android:color/black"
+                            android:textSize="14sp"
+                            android:visibility="visible" />
+
+                        <TextView android:fontFamily="@font/gisha_0"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginStart="10dp"
+
+                            android:text="@string/hint_txt_pinCode"
+                            android:textColor="@color/colorAccent"
+                            android:visibility="visible" />
+
+                        <TextView android:fontFamily="@font/gisha_0"
+                            android:id="@+id/txt_pinCode"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginStart="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/bg_orange_bottom_line"
+
+                            android:paddingBottom="5dp"
+                            android:paddingTop="5dp"
+                            android:textColor="@android:color/black"
+                            android:textSize="14sp"
+                            android:visibility="visible" />
+
+                        <TextView android:fontFamily="@font/gisha_0"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginStart="10dp"
+
+                            android:text="@string/mobile"
+                            android:textColor="@color/colorAccent"
+                            android:visibility="visible" />
+
+                        <TextView android:fontFamily="@font/gisha_0"
+                            android:id="@+id/txt_mobileNumber"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginStart="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/bg_orange_bottom_line"
+
+                            android:paddingBottom="5dp"
+                            android:paddingTop="5dp"
+                            android:textColor="@android:color/black"
+                            android:textSize="14sp"
+                            android:visibility="visible" />
+
+
+                        <TextView android:fontFamily="@font/gisha_0"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginStart="10dp"
+
+                            android:text="Alternate Mobile Number"
+                            android:textColor="@color/colorAccent"
+                            android:visibility="visible"
+                            tools:ignore="HardcodedText" />
+
+                        <TextView android:fontFamily="@font/gisha_0"
+                            android:id="@+id/txt_phoneNumber"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginStart="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/bg_orange_bottom_line"
+
+                            android:paddingBottom="5dp"
+                            android:paddingTop="5dp"
+                            android:textColor="@android:color/black"
+                            android:textSize="14sp"
+                            android:visibility="visible" />
+
+
+                        <TextView android:fontFamily="@font/gisha_0"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginStart="10dp"
+
+                            android:text="@string/txt_email"
+                            android:textColor="@color/colorAccent"
+                            android:visibility="visible" />
+
+                        <TextView android:fontFamily="@font/gisha_0"
+                            android:id="@+id/txt_email"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginStart="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/bg_orange_bottom_line"
+
+                            android:paddingBottom="5dp"
+                            android:paddingTop="5dp"
+                            android:textColor="@android:color/black"
+                            android:textSize="14sp"
+                            android:visibility="visible" />
+
+
+                        <!--Sponsor-->
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:visibility="visible">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/white"
+                        android:orientation="vertical">
+                        <!--Nominee-->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:background="#FFB435"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="40dp"
+                                android:layout_height="match_parent"
+                                android:adjustViewBounds="true"
+                                app:srcCompat="@drawable/reg_icon_nominee" />
+
+                            <TextView android:fontFamily="@font/gisha_0"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+
+
+                                android:paddingBottom="10dp"
+                                android:paddingEnd="10dp"
+                                android:paddingLeft="5dp"
+                                android:paddingRight="10dp"
+                                android:paddingStart="5dp"
+                                android:paddingTop="10dp"
+                                android:text="Sponsor Details"
+                                android:textColor="@android:color/white"
+                                android:textSize="18sp"
+                                android:visibility="visible" />
+                        </LinearLayout>
+
+                        <TextView android:fontFamily="@font/gisha_0"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginStart="10dp"
+
+                            android:text="Sponsor ID"
+                            android:textColor="@color/colorAccent"
+                            android:textSize="12sp"
+                            android:visibility="visible" />
+
+                        <TextView android:fontFamily="@font/gisha_0"
+                            android:id="@+id/txt_SponsorID"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginStart="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/bg_orange_bottom_line"
+
+                            android:paddingBottom="5dp"
+                            android:paddingTop="5dp"
+                            android:textColor="@android:color/black"
+                            android:textSize="14sp"
+                            android:visibility="visible" />
+
+
+                        <TextView android:fontFamily="@font/gisha_0"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginStart="10dp"
+
+                            android:text="Sponsor Name "
+                            android:textColor="@color/colorAccent"
+                            android:textSize="12sp"
+                            android:visibility="visible" />
+
+                        <TextView android:fontFamily="@font/gisha_0"
+                            android:id="@+id/txt_SponsorName"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginStart="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/bg_orange_bottom_line"
+
+                            android:paddingBottom="5dp"
+                            android:paddingTop="5dp"
+                            android:textColor="@android:color/black"
+                            android:textSize="14sp"
+                            android:visibility="visible" />
+
+                        <TextView android:fontFamily="@font/gisha_0"
+                                  android:layout_width="match_parent"
+                                  android:layout_height="wrap_content"
+                                  android:layout_marginEnd="10dp"
+                                  android:layout_marginLeft="10dp"
+                                  android:layout_marginRight="10dp"
+                                  android:layout_marginStart="10dp"
+
+                                  android:text="Position"
+                                  android:textColor="@color/colorAccent"
+                                  android:textSize="12sp"
+                                  android:visibility="visible" />
+
+                        <TextView android:fontFamily="@font/gisha_0"
+                                  android:id="@+id/txt_position"
+                                  android:layout_width="match_parent"
+                                  android:layout_height="wrap_content"
+                                  android:layout_marginBottom="10dp"
+                                  android:layout_marginEnd="10dp"
+                                  android:layout_marginLeft="10dp"
+                                  android:layout_marginRight="10dp"
+                                  android:layout_marginStart="10dp"
+                                  android:layout_weight="1"
+                                  android:background="@drawable/bg_orange_bottom_line"
+
+                                  android:paddingBottom="5dp"
+                                  android:paddingTop="5dp"
+                                  android:textColor="@android:color/black"
+                                  android:textSize="14sp"
+                                  android:visibility="visible" />
+
+
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:visibility="visible">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/white"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:background="#71B949"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="40dp"
+                                android:layout_height="match_parent"
+                                android:adjustViewBounds="true"
+                                app:srcCompat="@drawable/reg_icon_bank" />
+
+                            <TextView android:fontFamily="@font/gisha_0"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+
+
+                                android:paddingBottom="10dp"
+                                android:paddingEnd="10dp"
+                                android:paddingLeft="5dp"
+                                android:paddingRight="10dp"
+                                android:paddingStart="5dp"
+                                android:paddingTop="10dp"
+                                android:text="@string/txt_bankInfo"
+                                android:textColor="@android:color/white"
+                                android:textSize="18sp"
+                                android:visibility="visible" />
+                        </LinearLayout>
+
+                        <TextView android:fontFamily="@font/gisha_0"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginStart="10dp"
+
+                            android:text="@string/txt_bankAcntNumber"
+                            android:textColor="@color/colorAccent"
+                            android:textSize="12sp"
+                            android:visibility="visible" />
+
+                        <TextView android:fontFamily="@font/gisha_0"
+                            android:id="@+id/txt_bankAcntNumber"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginStart="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/bg_orange_bottom_line"
+
+                            android:paddingBottom="5dp"
+                            android:paddingTop="5dp"
+                            android:textColor="@android:color/black"
+                            android:textSize="14sp"
+                            android:visibility="visible" />
+
+                        <TextView android:fontFamily="@font/gisha_0"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginStart="10dp"
+
+                            android:text="@string/txt_bankName"
+                            android:textColor="@color/colorAccent"
+                            android:textSize="12sp"
+                            android:visibility="visible" />
+
+                        <TextView android:fontFamily="@font/gisha_0"
+                            android:id="@+id/txt_bankName"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginStart="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/bg_orange_bottom_line"
+
+                            android:paddingBottom="5dp"
+                            android:paddingTop="5dp"
+                            android:textColor="@android:color/black"
+                            android:textSize="14sp"
+                            android:visibility="visible" />
+
+                        <TextView android:fontFamily="@font/gisha_0"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginStart="10dp"
+
+                            android:text="@string/txt_bankBranch"
+                            android:textColor="@color/colorAccent"
+                            android:textSize="12sp"
+                            android:visibility="visible" />
+
+                        <TextView android:fontFamily="@font/gisha_0"
+                            android:id="@+id/txt_bankBranch"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginStart="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/bg_orange_bottom_line"
+
+                            android:paddingBottom="5dp"
+                            android:paddingTop="5dp"
+                            android:textColor="@android:color/black"
+                            android:textSize="14sp"
+                            android:visibility="visible" />
+
+                        <TextView android:fontFamily="@font/gisha_0"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginStart="10dp"
+
+                            android:text="@string/txt_bankIfsc"
+                            android:textColor="@color/colorAccent"
+                            android:textSize="12sp"
+                            android:visibility="visible" />
+
+                        <TextView android:fontFamily="@font/gisha_0"
+                            android:id="@+id/txt_bankIfsc"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginStart="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/bg_orange_bottom_line"
+
+                            android:paddingBottom="5dp"
+                            android:paddingTop="5dp"
+                            android:textColor="@android:color/black"
+                            android:textSize="14sp"
+                            android:visibility="visible" />
+
+
+                        <TextView android:fontFamily="@font/gisha_0"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginStart="10dp"
+
+                            android:text="@string/PANno"
+                            android:textColor="@color/colorAccent"
+                            android:visibility="visible" />
+
+                        <TextView android:fontFamily="@font/gisha_0"
+                            android:id="@+id/txt_PANNumber"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginStart="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/bg_orange_bottom_line"
+
+                            android:paddingBottom="5dp"
+                            android:paddingTop="5dp"
+                            android:textColor="@android:color/black"
+                            android:visibility="visible" />
+
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginTop="15dp"
+                    android:visibility="visible">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/white"
+                        android:orientation="vertical">
+                        <!--Nominee-->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:background="#FFB435"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="40dp"
+                                android:layout_height="match_parent"
+                                android:adjustViewBounds="true"
+                                app:srcCompat="@drawable/reg_icon_nominee" />
+
+                            <TextView android:fontFamily="@font/gisha_0"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+
+
+                                android:paddingBottom="10dp"
+                                android:paddingEnd="10dp"
+                                android:paddingLeft="5dp"
+                                android:paddingRight="10dp"
+                                android:paddingStart="5dp"
+                                android:paddingTop="10dp"
+                                android:text="@string/txt_nomineedetails"
+                                android:textColor="@android:color/white"
+                                android:textSize="18sp"
+                                android:visibility="visible" />
+                        </LinearLayout>
+
+                        <TextView android:fontFamily="@font/gisha_0"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginStart="10dp"
+
+                            android:text="@string/hint_txt_nomineeName"
+                            android:textColor="@color/colorAccent"
+                            android:textSize="12sp"
+                            android:visibility="visible" />
+
+                        <TextView android:fontFamily="@font/gisha_0"
+                            android:id="@+id/txt_nomineeName"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginStart="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/bg_orange_bottom_line"
+
+                            android:paddingBottom="5dp"
+                            android:paddingTop="5dp"
+                            android:textColor="@android:color/black"
+                            android:textSize="14sp"
+                            android:visibility="visible" />
+
+
+                        <TextView android:fontFamily="@font/gisha_0"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginStart="10dp"
+
+                            android:text="@string/txt_nomineeRelation"
+                            android:textColor="@color/colorAccent"
+                            android:textSize="12sp"
+                            android:visibility="visible" />
+
+                        <TextView android:fontFamily="@font/gisha_0"
+                            android:id="@+id/txt_nomineeRelation"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginStart="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/bg_orange_bottom_line"
+
+                            android:paddingBottom="5dp"
+                            android:paddingTop="5dp"
+                            android:textColor="@android:color/black"
+                            android:textSize="14sp"
+                            android:visibility="visible" />
+
+                        <TextView android:fontFamily="@font/gisha_0"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginStart="10dp"
+
+                            android:text="Nominee DOB"
+                            android:textColor="@color/colorAccent"
+                            android:textSize="12sp"
+                            android:visibility="visible" />
+
+                        <TextView android:fontFamily="@font/gisha_0"
+                            android:id="@+id/txt_nominee_dob"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginStart="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/bg_orange_bottom_line"
+
+                            android:paddingBottom="5dp"
+                            android:paddingTop="5dp"
+                            android:textColor="@android:color/black"
+                            android:textSize="14sp"
+                            android:visibility="visible" />
+
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+                <Button android:fontFamily="@font/gisha_0"
+                    android:id="@+id/btn_updateMyProfile"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/bg_blue_circle_rectangle"
+                    android:focusableInTouchMode="false"
+
+
+                    android:text="@string/btn_updateMyProfile"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/white"
+                    android:textSize="18sp"
+                    android:visibility="gone" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+        android:background="@color/colorPrimaryDark" />
+</LinearLayout>

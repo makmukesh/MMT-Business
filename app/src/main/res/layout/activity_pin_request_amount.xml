@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolbarlayout"
+        layout="@layout/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbarlayout"
+        android:fitsSystemWindows="true"
+        tools:openDrawer="start">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/white"
+            android:focusable="true"
+
+            android:focusableInTouchMode="true"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txt_heading"
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:layout_gravity="center"
+                android:background="#328D6E"
+                android:fontFamily="@font/gisha_0"
+                android:gravity="center"
+
+                android:singleLine="true"
+                android:text="E-Pin Request"
+                android:textAllCaps="false"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@android:color/white"
+                tools:ignore="Deprecated,HardcodedText" />
+
+            <ScrollView
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:fillViewport="false">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="15dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginBottom="15dp"
+                        android:background="@android:color/white"
+                        android:orientation="vertical"
+                        android:visibility="visible">
+
+                        <HorizontalScrollView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@android:color/white"
+                            android:scrollbars="none">
+
+                            <TableLayout
+                                android:id="@+id/displayLinear"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@android:color/black"
+                                android:orientation="vertical"
+                                android:paddingStart="1dp"
+                                android:paddingLeft="1dp"
+                                android:paddingTop="1dp"
+                                android:paddingEnd="1dp"
+                                android:paddingRight="1dp"
+                                android:paddingBottom="1dp"></TableLayout>
+
+                        </HorizontalScrollView>
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="10dp"
+                            android:gravity="bottom"
+                            android:minHeight="52dp"
+                            android:visibility="visible">
+
+                            <android.support.design.widget.TextInputEditText
+                                android:id="@+id/edtxt_total_pin"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/bg_orange_bottom_line"
+                                android:digits="0123456789."
+                                android:editable="false"
+                                android:enabled="false"
+                                android:fontFamily="@font/gisha_0"
+                                android:hint="Requested Total Pins"
+                                android:inputType="none"
+                                android:maxLength="5"
+                                android:maxLines="1"
+                                android:minHeight="40dp"
+                                android:singleLine="true"
+                                android:textSize="13sp"
+                                android:visibility="visible" />
+                        </android.support.design.widget.TextInputLayout>
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="10dp"
+                            android:gravity="bottom"
+                            android:minHeight="52dp"
+                            android:visibility="visible">
+
+                            <android.support.design.widget.TextInputEditText
+                                android:id="@+id/edtxt_amount"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/bg_orange_bottom_line"
+                                android:digits="0123456789."
+                                android:editable="false"
+                                android:enabled="false"
+                                android:fontFamily="@font/gisha_0"
+                                android:hint="Requested Pin Amount"
+                                android:inputType="none"
+                                android:maxLength="5"
+                                android:maxLines="1"
+                                android:minHeight="40dp"
+                                android:singleLine="true"
+                                android:textSize="13sp"
+                                android:visibility="visible" />
+                        </android.support.design.widget.TextInputLayout>
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:gravity="bottom"
+                            android:minHeight="52dp">
+
+                            <android.support.design.widget.TextInputEditText
+                                android:id="@+id/txt_choose_pay_mode"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:background="@drawable/bg_orange_bottom_line"
+                                android:drawableEnd="@drawable/ic_expand_more_white"
+                                android:drawableRight="@drawable/ic_expand_more_white"
+                                android:editable="false"
+                                android:fontFamily="@font/gisha_0"
+                                android:hint="Choose Payment Mode"
+                                android:minHeight="40dp"
+                                android:singleLine="true"
+                                android:spinnerMode="dialog"
+                                android:textAllCaps="true"
+                                android:textSize="13sp"
+                                tools:ignore="Deprecated,HardcodedText" />
+                        </android.support.design.widget.TextInputLayout>
+
+
+                        <android.support.design.widget.TextInputLayout
+                            android:id="@+id/choose_bank"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:gravity="bottom"
+                            android:minHeight="52dp">
+
+                            <android.support.design.widget.TextInputEditText
+                                android:id="@+id/txt_choose_bank"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:background="@drawable/bg_orange_bottom_line"
+                                android:drawableEnd="@drawable/ic_expand_more_white"
+                                android:drawableRight="@drawable/ic_expand_more_white"
+                                android:editable="false"
+                                android:fontFamily="@font/gisha_0"
+                                android:hint="Choose Bank"
+
+                                android:minHeight="40dp"
+                                android:singleLine="true"
+                                android:spinnerMode="dialog"
+                                android:textAllCaps="true"
+                                android:textSize="13sp"
+                                tools:ignore="Deprecated,HardcodedText" />
+                        </android.support.design.widget.TextInputLayout>
+
+                        <android.support.design.widget.TextInputLayout
+                            android:id="@+id/bank_branch"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="10dp"
+                            android:gravity="bottom"
+                            android:minHeight="52dp">
+
+                            <android.support.design.widget.TextInputEditText
+                                android:id="@+id/edtxt_branch_name"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:background="@drawable/bg_orange_bottom_line"
+                                android:fontFamily="@font/gisha_0"
+                                android:hint="Branch Name"
+                                android:inputType="textPersonName"
+                                android:maxLines="4"
+                                android:minHeight="40dp"
+                                android:singleLine="true"
+                                android:textAllCaps="true"
+                                android:textSize="13sp"
+                                tools:ignore="Deprecated,HardcodedText" />
+                        </android.support.design.widget.TextInputLayout>
+
+                        <android.support.design.widget.TextInputLayout
+                            android:id="@+id/account_number"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="10dp"
+                            android:gravity="bottom"
+                            android:minHeight="52dp">
+
+                            <android.support.design.widget.TextInputEditText
+                                android:id="@+id/edtxt_account_no"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:background="@drawable/bg_orange_bottom_line"
+                                android:fontFamily="@font/gisha_0"
+                                android:hint="Account Number"
+                                android:inputType="number|phone"
+                                android:maxLines="4"
+                                android:minHeight="40dp"
+                                android:singleLine="true"
+                                android:textAllCaps="true"
+                                android:textSize="13sp"
+                                tools:ignore="Deprecated,HardcodedText" />
+                        </android.support.design.widget.TextInputLayout>
+
+                        <android.support.design.widget.TextInputLayout
+                            android:id="@+id/tran_number"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:gravity="bottom"
+                            android:minHeight="52dp">
+
+                            <android.support.design.widget.TextInputEditText
+                                android:id="@+id/edtxt_transaction_no"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:background="@drawable/bg_orange_bottom_line"
+                                android:fontFamily="@font/gisha_0"
+                                android:hint="Transaction No."
+                                android:inputType="textPersonName"
+                                android:maxLines="4"
+                                android:minHeight="40dp"
+                                android:singleLine="true"
+                                android:textAllCaps="true"
+                                android:textSize="13sp"
+                                tools:ignore="Deprecated,HardcodedText" />
+                        </android.support.design.widget.TextInputLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:padding="5dp"
+                            android:gravity="center">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Upload Receipt"
+                                android:gravity="start|left"
+                                android:textColor="@color/app_color_black"
+                                />
+
+                            <ImageView
+                                android:layout_width="150dp"
+                                android:layout_height="150dp"
+                                android:id="@+id/iv_txn_slip"
+                                android:background="#eee"
+                                android:layout_marginTop="3dp"
+                                android:padding="2dp"
+                                android:src="@drawable/ic_no_image"
+                                android:scaleType="fitXY" />
+
+                        </LinearLayout>
+
+                        <Button
+                            android:id="@+id/btn_request"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/bg_blue_circle_rectangle"
+                            android:focusableInTouchMode="false"
+                            android:fontFamily="@font/gisha_0"
+                            android:text="Request For Pin"
+                            android:textAllCaps="false"
+                            android:textColor="@android:color/white"
+                            android:textSize="18sp"
+                            tools:ignore="HardcodedText" />
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+            </ScrollView>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:background="@color/colorPrimaryDark" />
+        </LinearLayout>
+
+
+        <android.support.design.widget.NavigationView
+            android:id="@+id/nav_view"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:fitsSystemWindows="true"
+            app:headerLayout="@layout/nav_header_home_">
+
+            <ExpandableListView
+                android:id="@+id/left_drawer"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="120dp"
+                android:childDivider="#eeeeee"
+                android:divider="#eeeeee"
+                android:dividerHeight="1dp"
+                android:groupIndicator="@null"
+                android:smoothScrollbar="true" />
+
+        </android.support.design.widget.NavigationView>
+    </android.support.v4.widget.DrawerLayout>
+
+</RelativeLayout>

@@ -1,0 +1,1120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView android:fontFamily="@font/gisha_0"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:layout_gravity="center"
+        android:background="#328D6E"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="@string/update_profile"
+        android:textAllCaps="false"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@android:color/white"
+        tools:ignore="Deprecated,HardcodedText" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/table_row_two"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="5dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/app_color_green_one" />
+
+                <TextView android:fontFamily="@font/gisha_0"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:padding="5dp"
+                    android:text="You can update your profile details only once from here. Onwards next time it can be updated only by Admin. If You have Fill Wrong."
+                    android:textColor="@color/app_color_black"
+                    android:textSize="12sp"
+                    tools:ignore="HardcodedText" />
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/color_green_text" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_weight=".7"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="visible"
+                    android:id="@+id/ll_update_profile_data">
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="visible">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/white"
+                        android:orientation="vertical">
+
+                        <!--Personal-->
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#00ACAC"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="40dp"
+                                android:layout_height="match_parent"
+                                android:adjustViewBounds="true"
+                                app:srcCompat="@drawable/reg_icon_personal_details" />
+
+                            <TextView android:fontFamily="@font/gisha_0"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                 android:paddingBottom="10dp"
+                                android:paddingEnd="10dp"
+                                android:paddingLeft="5dp"
+                                android:paddingRight="10dp"
+                                android:paddingStart="5dp"
+                                android:paddingTop="10dp"
+                                android:text="@string/profile_picture"
+                                android:textColor="@android:color/white"
+                                android:textSize="18sp"
+                                android:visibility="visible" />
+                        </LinearLayout>
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="10dp"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:visibility="visible">
+
+                            <com.vpipl.mmtbusiness.Utils.CircularImageView
+                                android:id="@+id/iv_Profile_Pic"
+                                android:layout_width="110dp"
+                                android:layout_height="110dp"
+                                android:layout_gravity="center"
+                                android:layout_margin="10dp"
+                                android:gravity="center"
+                                android:src="@drawable/ic_user_black"
+                                android:visibility="visible" />
+
+                            <ImageView
+                                android:id="@+id/iv_upload"
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_gravity="center_horizontal|bottom"
+                                android:background="@drawable/ic_profile_edit"
+                                android:contentDescription="@string/app_name"
+                                android:gravity="center_horizontal|bottom"
+                                android:scaleType="centerCrop" />
+                        </FrameLayout>
+
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <!--<TextView android:fontFamily="@font/gisha_0"  -->
+                <!--android:layout_marginBottom="10dp"-->
+                <!--android:layout_marginTop="5dp"-->
+                <!--android:padding="5dp"-->
+                <!--android:textColor="@color/color_text_grey"-->
+                <!--android:textSize="18sp"-->
+                <!--android:visibility="visible" />-->
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:visibility="visible">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/white"
+                        android:orientation="vertical">
+
+                        <!--Personal-->
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:background="#00ACAC"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="40dp"
+                                android:layout_height="match_parent"
+                                android:adjustViewBounds="true"
+                                app:srcCompat="@drawable/reg_icon_personal_details" />
+
+                            <TextView android:fontFamily="@font/gisha_0"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+
+                                 android:paddingBottom="10dp"
+                                android:paddingEnd="10dp"
+                                android:paddingLeft="5dp"
+                                android:paddingRight="10dp"
+                                android:paddingStart="5dp"
+                                android:paddingTop="10dp"
+                                android:text="@string/personal_detail"
+                                android:textColor="@android:color/white"
+                                android:textSize="18sp"
+                                android:visibility="visible" />
+                        </LinearLayout>
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="0dp"
+                            android:gravity="bottom"
+                            android:minHeight="52dp">
+
+                            <android.support.design.widget.TextInputEditText android:fontFamily="@font/gisha_0"
+                                android:id="@+id/edtxt_memberName"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:background="@drawable/bg_orange_bottom_line"
+                                android:editable="false"
+                                android:hint="Name"
+                                android:inputType="none"
+                                android:maxLines="1"
+                                android:minHeight="40dp"
+                                android:singleLine="true"
+                                android:textAllCaps="true"
+                                android:textSize="13sp"
+                                tools:ignore="Deprecated,HardcodedText" />
+                        </android.support.design.widget.TextInputLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="0dp"
+                            android:orientation="horizontal"
+                            android:visibility="visible">
+
+                            <android.support.design.widget.TextInputLayout
+                                android:layout_width="80dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="10dp"
+                                android:gravity="bottom"
+                                android:minHeight="52dp">
+
+                                <android.support.design.widget.TextInputEditText android:fontFamily="@font/gisha_0"
+                                    android:id="@+id/txt_prefix"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:background="@drawable/bg_orange_bottom_line"
+                                    android:drawableEnd="@drawable/ic_expand_more_white"
+                                    android:drawableRight="@drawable/ic_expand_more_white"
+                                    android:editable="false"
+                                    android:hint="Relation"
+                                    android:inputType="none"
+                                    android:maxLines="1"
+                                    android:minHeight="40dp"
+                                    android:singleLine="true"
+                                    android:textAllCaps="true"
+                                    android:textSize="13sp"
+                                    tools:ignore="Deprecated,HardcodedText" />
+                            </android.support.design.widget.TextInputLayout>
+
+
+                            <android.support.design.widget.TextInputLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="bottom"
+                                android:minHeight="52dp">
+
+                                <android.support.design.widget.TextInputEditText android:fontFamily="@font/gisha_0"
+                                    android:id="@+id/edtxt_father_name"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:background="@drawable/bg_orange_bottom_line"
+                                    android:hint="@string/guardian_name"
+                                    android:inputType="textPersonName"
+                                    android:maxLines="1"
+                                    android:minHeight="40dp"
+                                    android:singleLine="true"
+                                    android:textAllCaps="true"
+                                    android:textSize="13sp"
+                                    tools:ignore="Deprecated" />
+                            </android.support.design.widget.TextInputLayout>
+
+                        </LinearLayout>
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="0dp"
+                            android:gravity="bottom"
+                            android:minHeight="52dp">
+
+                            <android.support.design.widget.TextInputEditText android:fontFamily="@font/gisha_0"
+                                android:id="@+id/txt_dob"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:background="@drawable/bg_orange_bottom_line"
+                                android:editable="true"
+                                android:hint="@string/dob"
+                                android:inputType="none"
+                                android:maxLines="1"
+                                android:minHeight="40dp"
+                                android:singleLine="true"
+                                android:textAllCaps="true"
+                                android:textSize="13sp"
+                                tools:ignore="Deprecated" />
+                        </android.support.design.widget.TextInputLayout>
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="15dp"
+                    android:visibility="visible">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/white"
+                        android:orientation="vertical">
+
+                        <!--Personal-->
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:background="#00ACAC"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="40dp"
+                                android:layout_height="match_parent"
+                                android:adjustViewBounds="true"
+                                app:srcCompat="@drawable/reg_icon_personal_details" />
+
+                            <TextView android:fontFamily="@font/gisha_0"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+
+                                 android:paddingBottom="10dp"
+                                android:paddingEnd="10dp"
+                                android:paddingLeft="5dp"
+                                android:paddingRight="10dp"
+                                android:paddingStart="5dp"
+                                android:paddingTop="10dp"
+                                android:text="@string/contact_detail"
+                                android:textColor="@android:color/white"
+                                android:textSize="18sp"
+                                android:visibility="visible" />
+                        </LinearLayout>
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="0dp"
+                            android:gravity="bottom"
+                            android:minHeight="52dp">
+
+                            <android.support.design.widget.TextInputEditText android:fontFamily="@font/gisha_0"
+                                android:id="@+id/edtxt_address"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:background="@drawable/bg_orange_bottom_line"
+                                android:hint="@string/address"
+                                android:inputType="textPersonName"
+                                android:maxLines="4"
+                                android:minHeight="40dp"
+                                android:singleLine="true"
+                                android:textAllCaps="true"
+                                android:textSize="13sp"
+                                tools:ignore="Deprecated" />
+                        </android.support.design.widget.TextInputLayout>
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="0dp"
+                            android:gravity="bottom"
+                            android:minHeight="52dp">
+
+                            <android.support.design.widget.TextInputEditText android:fontFamily="@font/gisha_0"
+                                android:id="@+id/edtxt_city"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:background="@drawable/bg_orange_bottom_line"
+                                android:hint="@string/txt_city"
+                                android:inputType="textPersonName"
+                                android:maxLines="1"
+                                android:minHeight="40dp"
+                                android:singleLine="true"
+                                android:spinnerMode="dialog"
+                                android:textAllCaps="true"
+                                android:textSize="13sp"
+                                tools:ignore="Deprecated" />
+                        </android.support.design.widget.TextInputLayout>
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="0dp"
+                            android:gravity="bottom"
+                            android:minHeight="52dp">
+
+                            <android.support.design.widget.TextInputEditText android:fontFamily="@font/gisha_0"
+                                android:id="@+id/edtxt_district"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:background="@drawable/bg_orange_bottom_line"
+                                android:hint="@string/txt_district"
+                                android:inputType="textPersonName"
+                                android:maxLines="1"
+                                android:minHeight="40dp"
+                                android:singleLine="true"
+                                android:spinnerMode="dialog"
+                                android:textAllCaps="true"
+                                android:textSize="13sp"
+                                tools:ignore="Deprecated" />
+                        </android.support.design.widget.TextInputLayout>
+
+                       <!-- <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="0dp"
+                            android:gravity="bottom"
+                            android:minHeight="52dp">
+
+                            <android.support.design.widget.TextInputEditText android:fontFamily="@font/gisha_0"
+                                android:id="@+id/txt_state"
+                                android:drawableEnd="@drawable/ic_expand_more_white"
+                                android:drawableRight="@drawable/ic_expand_more_white"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:background="@drawable/bg_orange_bottom_line"
+                                android:editable="true"
+                                android:hint="@string/txt_state"
+                                android:inputType="none"
+                                android:minHeight="40dp"
+                                android:singleLine="true"
+                                android:spinnerMode="dialog"
+                                android:textSize="13sp"
+                                tools:ignore="Deprecated" />
+                        </android.support.design.widget.TextInputLayout>-->
+                   <!--     <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="0dp"
+                            android:gravity="bottom"
+                            android:minHeight="52dp">
+
+                            <android.support.design.widget.TextInputEditText
+                                android:id="@+id/txt_state"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:drawableEnd="@drawable/ic_expand_more_white"
+                                android:drawableRight="@drawable/ic_expand_more_white"
+                                android:background="@drawable/edittext_bottom_line"
+                                android:editable="false"
+                                android:focusableInTouchMode="false"
+                                android:hint="@string/txt_state"
+                                android:inputType="none"
+                                android:minHeight="40dp"
+                                android:singleLine="true"
+                                android:spinnerMode="dialog"
+                                android:textSize="13sp"
+                                tools:ignore="Deprecated" />
+                        </android.support.design.widget.TextInputLayout>-->
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="0dp"
+                            android:gravity="bottom"
+                            android:minHeight="52dp">
+
+                            <android.support.design.widget.TextInputEditText android:fontFamily="@font/gisha_0"
+                                android:id="@+id/txt_state"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:background="@drawable/bg_orange_bottom_line"
+                                android:drawableEnd="@drawable/ic_expand_more_white"
+                                android:drawableRight="@drawable/ic_expand_more_white"
+                                android:editable="false"
+                                android:hint="@string/txt_state"
+                                android:minHeight="40dp"
+                                android:singleLine="true"
+                                android:spinnerMode="dialog"
+                                android:textSize="13sp"
+                                tools:ignore="Deprecated" />
+                        </android.support.design.widget.TextInputLayout>
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="0dp"
+                            android:gravity="bottom"
+                            android:minHeight="52dp">
+
+                            <android.support.design.widget.TextInputEditText android:fontFamily="@font/gisha_0"
+                                android:id="@+id/edtxt_pinCode"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:background="@drawable/bg_orange_bottom_line"
+                                android:digits="@string/numberic"
+                                android:hint="@string/hint_txt_pinCode"
+                                android:inputType="number"
+                                android:maxLength="6"
+                                android:maxLines="1"
+                                android:minHeight="40dp"
+                                android:singleLine="true"
+                                android:spinnerMode="dialog"
+                                android:textAllCaps="true"
+                                android:textSize="13sp"
+                                tools:ignore="Deprecated" />
+                        </android.support.design.widget.TextInputLayout>
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="0dp"
+                            android:gravity="bottom"
+                            android:minHeight="52dp">
+
+                            <android.support.design.widget.TextInputEditText android:fontFamily="@font/gisha_0"
+                                android:id="@+id/edtxt_mobileNumber"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:background="@drawable/bg_orange_bottom_line"
+                                android:digits="@string/numberic"
+                                android:hint="@string/mobile"
+                                android:inputType="phone"
+                                android:maxLength="10"
+                                android:maxLines="1"
+                                android:minHeight="40dp"
+                                android:singleLine="true"
+                                android:spinnerMode="dialog"
+                                android:textAllCaps="true"
+                                android:textSize="13sp"
+                                tools:ignore="Deprecated" />
+                        </android.support.design.widget.TextInputLayout>
+
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="0dp"
+                            android:gravity="bottom"
+                            android:minHeight="52dp">
+
+                            <android.support.design.widget.TextInputEditText android:fontFamily="@font/gisha_0"
+                                android:id="@+id/edtxt_phoneNumber"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:background="@drawable/bg_orange_bottom_line"
+                                android:digits="@string/numberic"
+                                android:hint="Alternate Mobile Number"
+                                android:inputType="phone"
+                                android:maxLines="1"
+                                android:minHeight="40dp"
+                                android:singleLine="true"
+                                android:spinnerMode="dialog"
+                                android:textAllCaps="true"
+                                android:textSize="13sp"
+                                tools:ignore="Deprecated,HardcodedText" />
+                        </android.support.design.widget.TextInputLayout>
+
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="0dp"
+                            android:gravity="bottom"
+                            android:minHeight="52dp">
+
+                            <android.support.design.widget.TextInputEditText android:fontFamily="@font/gisha_0"
+                                android:id="@+id/edtxt_email"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:background="@drawable/bg_orange_bottom_line"
+                                android:hint="@string/txt_email"
+                                android:inputType="textEmailAddress"
+                                android:maxLines="1"
+                                android:minHeight="40dp"
+                                android:singleLine="true"
+                                android:spinnerMode="dialog"
+                                android:textAllCaps="true"
+                                android:textSize="13sp"
+                                tools:ignore="Deprecated" />
+                        </android.support.design.widget.TextInputLayout>
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="15dp"
+                    android:visibility="visible">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/white"
+                        android:orientation="vertical">
+
+                        <!--Personal-->
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:background="#00ACAC"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="40dp"
+                                android:layout_height="match_parent"
+                                android:adjustViewBounds="true"
+                                app:srcCompat="@drawable/reg_icon_personal_details" />
+
+                            <TextView android:fontFamily="@font/gisha_0"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+
+                                 android:paddingBottom="10dp"
+                                android:paddingEnd="10dp"
+                                android:paddingLeft="5dp"
+                                android:paddingRight="10dp"
+                                android:paddingStart="5dp"
+                                android:paddingTop="10dp"
+                                android:text="@string/txt_nomineedetails"
+                                android:textColor="@android:color/white"
+                                android:textSize="18sp"
+                                android:visibility="visible" />
+                        </LinearLayout>
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="0dp"
+                            android:gravity="bottom"
+                            android:minHeight="52dp">
+
+                            <android.support.design.widget.TextInputEditText android:fontFamily="@font/gisha_0"
+                                android:id="@+id/edtxt_nomineeName"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:background="@drawable/bg_orange_bottom_line"
+                                android:hint="@string/hint_txt_nomineeName"
+                                android:inputType="textPersonName"
+                                android:maxLines="1"
+                                android:minHeight="40dp"
+                                android:singleLine="true"
+                                android:spinnerMode="dialog"
+                                android:textAllCaps="true"
+                                android:textSize="13sp"
+                                tools:ignore="Deprecated" />
+                        </android.support.design.widget.TextInputLayout>
+
+                     <!--   <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="0dp"
+                            android:gravity="bottom"
+                            android:minHeight="52dp">
+
+                            <android.support.design.widget.TextInputEditText android:fontFamily="@font/gisha_0"
+                                android:id="@+id/txt_nominee_dob"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:background="@drawable/bg_orange_bottom_line"
+                                android:editable="true"
+                                android:hint="Nominee Age"
+                                android:maxLines="1"
+                                android:minHeight="40dp"
+                                android:singleLine="true"
+                                android:textAllCaps="true"
+                                android:textSize="13sp"
+                                tools:ignore="Deprecated" />
+                        </android.support.design.widget.TextInputLayout>-->
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="0dp"
+                            android:gravity="bottom"
+                            android:minHeight="52dp">
+
+                            <android.support.design.widget.TextInputEditText android:fontFamily="@font/gisha_0"
+                                android:id="@+id/txt_nominee_dob"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:background="@drawable/bg_orange_bottom_line"
+                                android:hint="Nominee Age"
+                                android:inputType="number"
+                                android:digits="0123456789"
+                                android:maxLength="3"
+                                android:maxLines="1"
+                                android:minHeight="40dp"
+                                android:singleLine="true"
+                                android:textAllCaps="true"
+                                android:textSize="13sp"
+                                tools:ignore="Deprecated" />
+                        </android.support.design.widget.TextInputLayout>
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="0dp"
+                            android:gravity="bottom"
+                            android:minHeight="52dp">
+
+                            <android.support.design.widget.TextInputEditText android:fontFamily="@font/gisha_0"
+                                android:id="@+id/edtxt_nomineeRelation"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:background="@drawable/bg_orange_bottom_line"
+                                android:hint="@string/txt_nomineeRelation"
+                                android:inputType="textPersonName"
+                                android:maxLines="1"
+                                android:minHeight="40dp"
+                                android:singleLine="true"
+                                android:textAllCaps="true"
+                                android:textSize="13sp"
+                                tools:ignore="Deprecated" />
+                        </android.support.design.widget.TextInputLayout>
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginTop="15dp"
+                    android:visibility="visible">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/white"
+                        android:orientation="vertical">
+
+                        <!--Personal-->
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:background="#00ACAC"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="40dp"
+                                android:layout_height="match_parent"
+                                android:adjustViewBounds="true"
+                                app:srcCompat="@drawable/reg_icon_personal_details" />
+
+                            <TextView android:fontFamily="@font/gisha_0"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+
+                                 android:paddingBottom="10dp"
+                                android:paddingEnd="10dp"
+                                android:paddingLeft="5dp"
+                                android:paddingRight="10dp"
+                                android:paddingStart="5dp"
+                                android:paddingTop="10dp"
+                                android:text="@string/txt_bankInfo"
+                                android:textColor="@android:color/white"
+                                android:textSize="18sp"
+                                android:visibility="visible" />
+                        </LinearLayout>
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="0dp"
+                            android:gravity="bottom"
+                            android:minHeight="52dp">
+
+                            <android.support.design.widget.TextInputEditText android:fontFamily="@font/gisha_0"
+                                android:id="@+id/edtxt_bankIfsc"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:background="@drawable/bg_orange_bottom_line"
+                                android:drawableRight="@drawable/ic_search_small"
+                                android:hint="@string/txt_bankIfsc"
+                                android:maxLength="11"
+                                android:maxLines="1"
+                                android:minHeight="40dp"
+                                android:singleLine="true"
+                                android:textAllCaps="true"
+                                android:textSize="13sp"
+                                tools:ignore="Deprecated" />
+                        </android.support.design.widget.TextInputLayout>
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="0dp"
+                            android:gravity="bottom"
+                            android:minHeight="52dp">
+
+                            <android.support.design.widget.TextInputEditText android:fontFamily="@font/gisha_0"
+                                android:id="@+id/txt_bankname"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:background="@drawable/bg_orange_bottom_line"
+                                android:drawableEnd="@drawable/ic_expand_more_white"
+                                android:drawableRight="@drawable/ic_expand_more_white"
+                                android:editable="false"
+                                android:hint="@string/txt_bankName"
+                                android:minHeight="40dp"
+                                android:singleLine="true"
+                                android:spinnerMode="dialog"
+                                android:textSize="13sp"
+                                tools:ignore="Deprecated" />
+                        </android.support.design.widget.TextInputLayout>
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="0dp"
+                            android:gravity="bottom"
+                            android:minHeight="52dp">
+
+                            <android.support.design.widget.TextInputEditText android:fontFamily="@font/gisha_0"
+                                android:id="@+id/edtxt_bankAcntNumber"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:background="@drawable/bg_orange_bottom_line"
+                                android:hint="@string/txt_bankAcntNumber"
+                                android:inputType="number"
+                                android:maxLines="1"
+                                android:minHeight="40dp"
+                                android:singleLine="true"
+                                android:textAllCaps="true"
+                                android:textSize="13sp"
+                                tools:ignore="Deprecated" />
+                        </android.support.design.widget.TextInputLayout>
+
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="0dp"
+                            android:gravity="bottom"
+                            android:minHeight="52dp">
+
+                            <android.support.design.widget.TextInputEditText android:fontFamily="@font/gisha_0"
+                                android:id="@+id/edtxt_bankBranch"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:background="@drawable/bg_orange_bottom_line"
+                                android:hint="@string/txt_bankBranch"
+                                android:inputType="textPersonName"
+                                android:maxLines="1"
+                                android:minHeight="40dp"
+                                android:singleLine="true"
+                                android:textAllCaps="true"
+                                android:textSize="13sp"
+                                tools:ignore="Deprecated" />
+                        </android.support.design.widget.TextInputLayout>
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="0dp"
+                            android:gravity="bottom"
+                            android:minHeight="52dp">
+
+                            <android.support.design.widget.TextInputEditText android:fontFamily="@font/gisha_0"
+                                android:id="@+id/edtxt_PANNumber"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:background="@drawable/bg_orange_bottom_line"
+                                android:hint="@string/PANno"
+                                android:inputType="textPersonName"
+                                android:maxLines="1"
+                                android:minHeight="40dp"
+                                android:singleLine="true"
+                                android:textAllCaps="true"
+                                android:textSize="13sp"
+                                tools:ignore="Deprecated" />
+                        </android.support.design.widget.TextInputLayout>
+
+
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+               </LinearLayout>
+
+                <Button android:fontFamily="@font/gisha_0"
+                    android:id="@+id/btn_updateProfile"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/bg_blue_circle_rectangle"
+                    android:focusableInTouchMode="false"
+                    android:text="Update"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/white"
+                    android:textSize="18sp" />
+
+                <Button android:fontFamily="@font/gisha_0"
+                    android:id="@+id/btn_updateProfilesendotp"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/bg_blue_circle_rectangle"
+                    android:focusableInTouchMode="false"
+                    android:text="Send OTP"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/white"
+                    android:textSize="18sp" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:id="@+id/ll_update_profile_enter_otp">
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Enter Valid OTP"
+                        android:gravity="center"
+                        android:textSize="18dp"
+                        android:textColor="@color/colorPrimary"/>
+
+                    <EditText
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:id="@+id/ed_otp"
+                        android:textColor="@color/app_color_black"
+                        android:background="@drawable/bg_round_button_white"
+                        android:padding="5dp"
+                        android:layout_marginTop="10dp"
+                        android:textSize="20dp"
+                        android:maxLength="6"
+                        android:digits="0123456789"
+                        android:inputType="number"
+                        android:gravity="center"/>
+
+                    <Button android:fontFamily="@font/gisha_0"
+                        android:id="@+id/btn_updateProfileafterotp"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginTop="15dp"
+                        android:background="@drawable/bg_blue_circle_rectangle"
+                        android:focusableInTouchMode="false"
+                        android:text="Update Profile"
+                        android:visibility="visible"
+                        android:textAllCaps="false"
+                        android:textColor="@android:color/white"
+                        android:textSize="18sp" />
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+        android:background="@color/colorPrimaryDark" />
+</LinearLayout>

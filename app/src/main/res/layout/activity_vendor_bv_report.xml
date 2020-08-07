@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright 2019 MMT Business. All rights reserved.
+  -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/app_color_white"
+    tools:context=".Sponsor_team_details_Activity">
+
+    <include
+        layout="@layout/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:layout_gravity="center"
+        android:background="@color/app_color_white"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="Vendor BV Commission Report"
+        android:textAllCaps="true"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/app_color_black"
+        tools:ignore="Deprecated" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/color_green_text" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:nestedScrollingEnabled="false"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+
+            <CheckBox
+                android:id="@+id/cb_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="3dp"
+                android:text="By Date"
+                android:textColor="#666666"
+                android:visibility="gone"
+                tools:ignore="HardcodedText" />
+
+            <LinearLayout
+                android:id="@+id/ll_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="From Date"
+                    android:textColor="@android:color/black"
+                    android:textSize="14sp"
+                    android:visibility="visible"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:id="@+id/txt_fromdate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/edittext_bottom_line"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="To Date"
+                    android:textColor="@android:color/black"
+                    android:textSize="14sp"
+                    android:visibility="visible"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:id="@+id/txt_todate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/edittext_bottom_line"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:text=""
+                android:gravity="center"
+                android:id="@+id/txt_ttl_bv"
+                android:textColor="@android:color/black"
+                android:textSize="14sp"
+                android:visibility="visible"
+                tools:ignore="HardcodedText" />
+
+
+            <RadioGroup
+                android:id="@+id/rg_status"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <RadioButton
+                    android:id="@+id/rb_approved"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:checked="true"
+                    android:text="Approved"
+                    android:textColor="#666666"
+                    android:textSize="14sp"
+                    android:visibility="visible"
+                    tools:ignore="HardcodedText" />
+
+                <RadioButton
+                    android:id="@+id/rb_rejected"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Rejected"
+                    android:textColor="#666666"
+                    android:textSize="14sp"
+                    android:visibility="visible"
+                    tools:ignore="HardcodedText" />
+
+                <RadioButton
+                    android:id="@+id/rb_all"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:checked="true"
+                    android:text="All"
+                    android:textColor="#666666"
+                    android:textSize="14sp"
+                    android:visibility="visible"
+                    tools:ignore="HardcodedText" />
+            </RadioGroup>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:gravity="bottom"
+                android:minHeight="52dp"
+                android:visibility="gone">
+
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/txt_franchisee_code"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/edittext_bottom_line"
+                    android:editable="false"
+                    android:hint="Franchisee Code"
+                    android:inputType="none"
+                    android:minHeight="40dp"
+                    android:singleLine="true"
+                    android:spinnerMode="dialog"
+                    android:textAllCaps="true"
+                    android:textSize="13sp"
+                    tools:ignore="Deprecated" />
+            </android.support.design.widget.TextInputLayout>
+
+
+            <Button
+                android:id="@+id/btn_proceed"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/round_rectangle_green"
+                android:focusableInTouchMode="false"
+                android:text="Proceed"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                android:visibility="gone"
+                tools:ignore="HardcodedText" />
+
+            <LinearLayout
+                android:id="@+id/ll_showData"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="5dp"
+                    android:background="@android:color/white"
+                    android:scrollbars="none">
+
+
+                    <TableLayout
+                        android:id="@+id/displayLinear"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#dddddd"
+                        android:orientation="vertical" />
+                </HorizontalScrollView>
+
+
+                <!--</HorizontalScrollView>-->
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

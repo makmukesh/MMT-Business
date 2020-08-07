@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:fillViewport="false"
+        android:nestedScrollingEnabled="false">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView android:fontFamily="@font/gisha_0"
+                android:id="@+id/txt_income_heading"
+                android:layout_width="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:background="#328D6E"
+                android:singleLine="true"
+                android:text="@string/sponsor_downline"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/app_color_white"
+                android:textAllCaps="true"
+                android:layout_height="46dp"
+                tools:ignore="Deprecated" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/color_green_text" />
+
+   <!--         <TextView android:fontFamily="@font/gisha_0"
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:layout_gravity="center"
+                android:background="#fff"
+                android:gravity="center"
+                android:singleLine="true"
+                android:id="@+id/txt_income_heading"
+                android:textAllCaps="false"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/app_color_black"
+                tools:ignore="Deprecated" />-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/white"
+                    android:scrollbars="none">
+
+                    <TableLayout
+                        android:id="@+id/displayLinear"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:paddingBottom="1dp"
+                        android:paddingEnd="1dp"
+                        android:paddingLeft="1dp"
+                        android:paddingRight="1dp"
+                        android:paddingStart="1dp"
+                        android:paddingTop="1dp"></TableLayout>
+
+                </HorizontalScrollView>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
+

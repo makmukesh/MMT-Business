@@ -1,0 +1,451 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.vpipl.mmtbusiness">
+
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+    <uses-permission android:name="com.android.launcher.permission.UNINSTALL_SHORTCUT" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_DOWNLOAD_MANAGER" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+
+    <application
+        android:name="com.vpipl.mmtbusiness.AppController"
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_launcher"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:usesCleartextTraffic="true"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.NoActionBar">
+        <uses-library android:name="org.apache.http.legacy" android:required="false" />
+
+        <activity
+            android:name="com.vpipl.mmtbusiness.Splash_Activity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.vpipl.mmtbusiness.Login_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.vpipl.mmtbusiness.DashBoard_New"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.vpipl.mmtbusiness.Register_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.vpipl.mmtbusiness.WelcomeLetter_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.vpipl.mmtbusiness.Change_Password_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.vpipl.mmtbusiness.Profile_View_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.vpipl.mmtbusiness.Profile_Update_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.vpipl.mmtbusiness.KYCUploadDocument_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.vpipl.mmtbusiness.Transaction_login_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.vpipl.mmtbusiness.Sponsor_team_details_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.vpipl.mmtbusiness.Direct_members_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.vpipl.mmtbusiness.Pin_details_for_bill_Activity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.vpipl.mmtbusiness.Pin_details_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.vpipl.mmtbusiness.Topup_member_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.vpipl.mmtbusiness.Pin_transfer_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.vpipl.mmtbusiness.Pin_Received_Report_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.vpipl.mmtbusiness.Pin_Transfer_Report_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.vpipl.mmtbusiness.Pin_details_for_transfer_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.vpipl.mmtbusiness.Pin_details_for_receive_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.vpipl.mmtbusiness.Forget_Password_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.vpipl.mmtbusiness.Pin_Generated_issued_details_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.vpipl.mmtbusiness.CloseActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.vpipl.mmtbusiness.Wallet_Withdrawal_Report_Activity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.vpipl.mmtbusiness.Pin_Request_Activity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.vpipl.mmtbusiness.Pin_Request_Report_Activity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.vpipl.mmtbusiness.Enquiry_Complaint_Activity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.vpipl.mmtbusiness.ROI_summary_activity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.vpipl.mmtbusiness.ROI_detail_activity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.vpipl.mmtbusiness.Home_New"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.vpipl.mmtbusiness.Investment_Detail_activity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.vpipl.mmtbusiness.Periodical_Report_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.vpipl.mmtbusiness.Pool_income_Report_Activity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.vpipl.mmtbusiness.Payment_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.vpipl.mmtbusiness.PaymentFailed_Activity"
+            android:screenOrientation="portrait" />
+
+
+        <activity
+            android:name="com.vpipl.mmtbusiness.ProductExpand_Activity"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.vpipl.mmtbusiness.ProductListGrid_Activity"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+
+        <activity
+            android:name="com.vpipl.mmtbusiness.ProductDetail_Activity"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.vpipl.mmtbusiness.AddCartCheckOut_Activity"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+
+        <activity
+            android:name="com.vpipl.mmtbusiness.CheckoutToPay_Activity"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+
+        <activity
+            android:name="com.vpipl.mmtbusiness.ChangeDeliveryAddress_Activity"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+
+        <activity
+            android:name="com.vpipl.mmtbusiness.AddDeliveryAddress_Activity"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+
+        <activity
+            android:name="com.vpipl.mmtbusiness.ThanksScreenOnline_Activity"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.vpipl.mmtbusiness.SearchProducts_Activity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+
+        <service android:name="com.vpipl.mmtbusiness.service.GetDataService" />
+
+        <activity
+            android:name="com.vpipl.mmtbusiness.MyOrders_Activity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.vpipl.mmtbusiness.MyOrdersDetails_Activity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.vpipl.mmtbusiness.MyAddressList_Activity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.vpipl.mmtbusiness.EditDeliveryAddress_Activity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.vpipl.mmtbusiness.Filter_Activity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.vpipl.mmtbusiness.Recharge_Mobile_Activity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.vpipl.mmtbusiness.Recharge_Mobile_Success_Activity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.vpipl.mmtbusiness.Recharge_Mobile_Failed_Activity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.vpipl.mmtbusiness.MyOrders_Recharge_Activity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.vpipl.mmtbusiness.Recharge_DTH_Activity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.vpipl.mmtbusiness.Level_Commission_Activity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.vpipl.mmtbusiness.Payment_History_Activity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.vpipl.mmtbusiness.Payment_Slip_Activity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.vpipl.mmtbusiness.Level_Commission_detail_Activity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.vpipl.mmtbusiness.Wallet_Withdraw_Request_Activity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.vpipl.mmtbusiness.Wallet_Transaction_Report_Activity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.vpipl.mmtbusiness.Bill_BroadBand_Activity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+
+          <activity
+            android:name="com.vpipl.mmtbusiness.Bill_Landline_Activity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+
+          <activity
+            android:name="com.vpipl.mmtbusiness.Bill_Gas_Activity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.vpipl.mmtbusiness.Bill_Water_Activity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.vpipl.mmtbusiness.Bill_Electricity_Activity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.vpipl.mmtbusiness.Bill_Success_Activity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.vpipl.mmtbusiness.Bill_Failed_Activity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+
+         <activity
+            android:name="com.vpipl.mmtbusiness.Recharge_Datacard_Activity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+         <activity
+            android:name="com.vpipl.mmtbusiness.Daily_Incentive_Activity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+         <activity
+            android:name="com.vpipl.mmtbusiness.Daily_Incentive_Detail_Activity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+         <activity
+            android:name="com.vpipl.mmtbusiness.Incentive_Statement_Activity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+         <activity
+            android:name="com.vpipl.mmtbusiness.Binary_genealogy_Activity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+         <activity
+            android:name="com.vpipl.mmtbusiness.Downline_Team_Details_Activity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+         <activity
+            android:name="com.vpipl.mmtbusiness.Sponsor_genealogy_Activity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+         <activity
+            android:name="com.vpipl.mmtbusiness.Wallet_Request_Amount_Activity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+         <activity
+            android:name="com.vpipl.mmtbusiness.Wallet_Request_Status_Report_Activity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+         <activity
+            android:name="com.vpipl.mmtbusiness.Wallet_Transaction_Report_Shopping_Activity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+         <activity
+            android:name="com.vpipl.mmtbusiness.Wallet_Transfer_Activity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+         <activity
+            android:name="com.vpipl.mmtbusiness.Wallet_Transfer_Report_Activity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+         <activity
+            android:name="com.vpipl.mmtbusiness.Rewards_Detail_Activity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+         <activity
+            android:name="com.vpipl.mmtbusiness.Wallet_Home_Transaction_Report_Activity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+         <activity
+            android:name="com.vpipl.mmtbusiness.Change_Mobile_No_Activity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+         <activity
+            android:name="com.vpipl.mmtbusiness.Launching_Bonanza_Report_Activity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+         <activity
+            android:name="com.vpipl.mmtbusiness.Weekly_Incentive_Activity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+         <activity
+            android:name="com.vpipl.mmtbusiness.Weekly_Incentive_Statement_Activity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+         <activity
+            android:name="com.vpipl.mmtbusiness.Monthly_Incentive_Activity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+         <activity
+            android:name="com.vpipl.mmtbusiness.Monthly_Incentive_Details_Activity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+         <activity
+            android:name="com.vpipl.mmtbusiness.Royalty_Incentive_Detail_Report_Activity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+         <activity
+            android:name="com.vpipl.mmtbusiness.Single_Leg_Bonus_Activity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+
+         <activity
+            android:name="com.vpipl.mmtbusiness.Send_Query_Activity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+         <activity
+            android:name="com.vpipl.mmtbusiness.Buy_Sell_Products_Activity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+         <activity
+            android:name="com.vpipl.mmtbusiness.DailyPoolDetails_Activity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+         <activity
+            android:name="com.vpipl.mmtbusiness.QR_Code.ReaderActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+         <activity
+            android:name="com.vpipl.mmtbusiness.Vendor_Commission_Activity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.vpipl.mmtbusiness.Bill_Entry_Activity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.vpipl.mmtbusiness.Bill_Report_Activity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"/>
+        <activity
+            android:name="com.vpipl.mmtbusiness.Vendor_Bv_Report_Activity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+
+        <service android:name="com.vpipl.mmtbusiness.extra.GetDataService"></service>
+        
+        <receiver android:name="com.vpipl.mmtbusiness.SMS.MySMSBroadcastReceiver" android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.android.gms.auth.api.phone.SMS_RETRIEVED"/>
+            </intent-filter>
+        </receiver>
+
+    </application>
+</manifest>
